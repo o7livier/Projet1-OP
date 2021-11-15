@@ -15,7 +15,7 @@ header
 }
 .photo 
 {   
-    border:1px solid red;
+   
     width: 5rem;
  
 }
@@ -48,7 +48,9 @@ header a:hover
 {
   color: #0065FC;
   border-top:3px solid #0065FC;
-   text-decoration:none; 
+  text-decoration:none; 
+  padding-top: 37px;
+  
 
 }
       /*TEXTE SOUS LOGO*/
@@ -107,11 +109,7 @@ button
 }
   
           /* FILTRES*/
-section 
-{
-    
-    
-}
+
 .filter
 {  
     display: flex;
@@ -120,7 +118,7 @@ section
     padding: 0px;
     border: 1px solid red;
     margin-top: 40px;
-    width: 7à%;
+    width: 70%;
 }
 .filter h1
 {
@@ -151,7 +149,13 @@ section
    
 
 }
+         /*SECTION HEBERGEMENT A MARSEILLE */
 
+img 
+{
+    object-fit: cover;
+    width: 200px;
+}
 
 
                /* FOOTER*/
