@@ -2,7 +2,7 @@ body
 {
     font-family: "Raleway", sans-serif;
     font-size:15px;
-    margin:30px;
+    margin-LEFT:30px;
 
 }
 header
@@ -11,12 +11,13 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 30px;
   
 }
 .photo 
 {   
    
-    width: 5rem;
+    width: 4rem;
  
 }
 
@@ -30,7 +31,7 @@ ul
 header li
 {
  display: inline;
- margin: 10px 30px;
+ margin: 15px 30px;
  cursor: pointer;
  font-size: 0.9rem;
 
@@ -46,38 +47,39 @@ header a
 
 header a:hover
 {
-  color: #0065FC;
+  
   border-top:3px solid #0065FC;
   text-decoration:none; 
-  padding-top: 37px;
+  padding-top: 34px;
   
-
 }
-      /*TEXTE SOUS LOGO*/
-h1
+                  /*TEXTE SOUS LOGO*/
+.under-logo h3
 {
-    font-size: 17px;
+    font-size: 11px;
     font-weight: bolder;
     margin-top: 30px;
 }
        
 
-h1 p
+.under-logo p
 {
-    font-size: 0.7REM;
+    font-size:10PX;
 }
        /* BARRE DE RECHERCHE*/
 
 .bar-search i
 {
    
-   
     background-color:#f2F2F2;
-    width: 50px;
-    height: 35px;
-    padding-top: 10px;
-    border-radius:10px 0 0 10px;
-    padding-left: 20px;
+    width: 35px;
+    height: 25px;
+    border-radius:7px 0 0 7px;
+    padding-left:10px;
+    padding-top: 8px;
+   
+    
+   
     
 }
  
@@ -88,9 +90,12 @@ h1 p
     padding-left: 10px;
     font-weight: bolder;
     border:1px solid #f2F2F2;
-    height: 35px;
+    height: 25px;
     border-left-style: none;
     border-right-style:none ;
+    margin-left: -10px;
+    margin-right:-10px;
+    font-size: 12px;
    
     
     
@@ -98,12 +103,14 @@ h1 p
 } 
 button
 {   
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 7px 7px 0;
     color: white;
     background-color: #0065FC;
-    width: 100px;
-    height: 35px;
+    width: 70px;
+    height: 25px;
     border:none;  
+    font-size: 9px;
+
 
 
 }
@@ -113,48 +120,177 @@ button
 .filter
 {  
     display: flex;
-    justify-content: space-between;
-    align-items:center ;
+    align-items: center;
     padding: 0px;
-    border: 1px solid red;
-    margin-top: 40px;
-    width: 70%;
+    margin-top: 30px;
+    
 }
-.filter h1
+
+.logo-economie
 {
-    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    margin-left:10px;
+    color:#0065FC;
+    background-color:#deebff;
+    border-radius:50px 50px 50px 50px;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 10px;
+
+}
+
+.filter i
+{
+   
+   padding-top: 10px;
 }
 .filter h2
-{    
-    font-size: 14px;
+{
+    font-size:14px;
     font-weight: bolder;
-    border: 2px solid RED;
-    border-radius: 0 15px 15px 0;
-    padding-top: 15px;
-    width: 180px;
-    height: 50px;
+}
+.titre-economie h3
+{   
+    
+    font-size:14px;
+    font-weight: bolder;
+    border:2px solid #f2F2F2;
+    border-radius:25px 25px;
+    width: 130px;
+    height: 35px;
+    padding-left: 45px;
+    padding-top: 8px;
+    border-left: none;
+    margin-left: -34px;
    
+}
+
+.logo-enfant
+{      
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+        margin-left:15px;
+        color:#0065FC;
+        background-color:#deebff;
+        border-radius:50px 50px 50px 50px;
+        width: 35px;
+        height: 35px;
+        margin-bottom: 10px;
+}
+
+.titre-enfant h3
+{
+    font-size:14px;
+    font-weight: bolder;
+    border:2px solid #f2F2F2;
+    border-radius:25px 25px;
+    width: 120px;
+    height: 35px;
+    padding-left: 45px;
+    padding-top: 8px;
+    border-left: none;
+    margin-left: -34px;
+   
+}
+.logo-heart
+{   
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+        margin-left:15px;
+        color:#0065FC;
+        background-color:#deebff;
+        border-radius:50px 50px 50px 50px;
+        width: 35px;
+        height: 35px;
+        margin-bottom: 10px;
+}
+
+
+.titre-romantique h3
+{
+    font-size:14px;
+    font-weight: bolder;
+    border:2px solid #f2F2F2;
+    border-radius:25px 25px;
+    width: 140px;
+    height: 35px;
+    padding-left: 45px;
+    padding-top: 8px;
+    border-left: none;
+    margin-left: -34px;
+}
+.logo-dog
+{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    margin-left:15px;
+    color:#0065FC;
+    background-color:#deebff;
+    border-radius:50px 50px 50px 50px;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.titre-animaux h3
+{
+    font-size:14px;
+    font-weight: bolder;
+    border:2px solid #f2F2F2;
+    border-radius:25px 25px;
+    width: 180px;
+    height: 35px;
+    padding-left: 40px;
+    padding-top: 8px;
+    border-left: none;
+    margin-left: -34px;
+}
+
+span
+{
+    display: flex;
+    margin-top: 40px;
   
 }
-.filter i
-{   
-
+span i
+{
     color: #0065FC;
-    border-radius: 50px 50px 50px 50px;
-    background-color:#DEEBFF;
-    width: 40px;
-    height: 40px;
-    padding-left:11px;
-    padding-top: 10px;
-   
-
 }
-         /*SECTION HEBERGEMENT A MARSEILLE */
+span h4
+{
+    font-size: 11px;
+    margin-left: 20PX;
+}
 
+
+
+
+/*SECTION HEBERGEMENT A MARSEILLE */
+
+#hebergement-marseille
+{
+    background-color: aqua;
+    padding-left: 20px;
+}
+
+#house 
+
+{   
+    padding-top: 50px; 
+    margin-top: 40px;
+    font-size: 17px;
+    font-weight: bolder;
+}
 img 
 {
     object-fit: cover;
-    width: 200px;
+    display: block;
+    width: 150px;
 }
 
 
@@ -162,19 +298,15 @@ img
 footer
 {
     background-color: #f2F2F2;
+    display: flex;
+   justify-content:space-between;
 }
  footer h4
  {
      font-size: 14px;
      font-weight: bolder;
  }              
- footer
- {
-   display: flex;
-   justify-content:space-between;
 
-  
- }
  footer li
  {
   
