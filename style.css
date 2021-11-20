@@ -12,6 +12,7 @@ header
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
+   
   
 }
 .photo 
@@ -27,6 +28,7 @@ header ul
     margin: 0 ;
     padding:0;
     list-style-type: none;
+    margin-right: 30px;
 
 }
 
@@ -35,7 +37,7 @@ header li
  
  margin: 15px 20px;
  cursor: pointer;
- font-size: 10px; 
+ font-size: 13px; 
 
 }
 header a
@@ -277,157 +279,206 @@ span h4
 
 
 /*SECTION HEBERGEMENT A MARSEILLE */
-
-
-
-#hebergement-marseille
+#house 
+{
+    font-size: 17px;
+    font-weight: bolder;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+.hebergement-marseille
 {   
     background-color:#f2F2F2;
     padding-left: 20px;
-    width: 66%;
-    height: 380px;
-    border-radius: 15px 15px 15px 15px;  
+    width: 52%;
+    height: 450px;
+    border-radius: 15px 15px 15px 15px;
 }
-#hebergement-marseille ul
+.hebergement-marseille img
 {
-    list-style: none;
-
-}
-#hebergement-marseille i
-{
-    color: #0065FC;
-}
-#hebergement-marseille img
-{  
- 
 object-fit: cover;
-width: 145px;
+width: 175px;
 height: 70px;
 padding-left: 4px;
 padding-top: 4px;
 border-radius: 15px 15px 0 0;
 
 }
-#house 
-
-{   
-    padding-top: 20px; 
-    font-size: 14px;
-    font-weight: bolder;
-
-}
-.hotel-haut ul
-{  
-   display: flex;
-   font-size: 10px;
-   padding-left: 10px;
-   margin-top: -20px;
-  
-}
-.hotel-haut p
+.hebergement-marseille h4
 {
-    font-size: 9px;
-    padding-bottom: 10px;
-    margin-left:10px;
-    line-height: 0.2rem; 
+ font-weight: bolder;
+ font-size: 13px;
+ margin-left: 10px;
+ padding-top: 5px;
+
 }
+.hebergement-marseille p
+{
+    font-size: 12px;
+    line-height: 0.1;
+    padding-left: 10px;
+}
+.hebergement-marseille div
+{
+    background-color:white;
+    width: 180px;
+    height: 140px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 15px 15px 15px 15px;
+   
+    
+}
+
 .hotel-haut
 {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-right: 20px;
-}
-
-.hotel-haut h4
-{
-    font-size: 10px;
-    font-weight: bolder;
-    margin-left: 9px;   
-}
-.hotel-haut div
-{   
-    background-color:white;
-    width:150px;
-    height:120px;
-    border-radius: 15px 15px 15px 15px;
-}
-.hotel-port
-{
-    margin-left:20px;
-}
-
-.hotel-mouettes
-{
-    margin-left: 20px;
-}
-          /* Section du bas HEBERGEMENT A MARSEILLE*/
-
-.hotel-bas
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-right: 20px;
-    margin-bottom:20px;
-}
-
-
-.hotel-bas div
-{    
-    background-color:white;
-    width:150px;
-    height:120px;
-    border-radius: 15px 15px 15px 15px;
-    margin-top: 20px;
-}
-.hotel-bas h4
-{
-
-    font-size: 10px;
-    font-weight: bolder;
-    margin-left: 9px;   
-}
-.hotel-bas p
-{
-    font-size: 9px;
-    padding-bottom: 10px;
-    margin-left:10px;
-    line-height: 0.2rem; 
-}
-.hotel-bas ul
-{  
-   display: flex;
-   font-size: 10px;
-   padding-left: 10px;
-   margin-top: -20px;
   
 }
 
 
-h5
+.hebergement-marseille ul
 {
-    font-size: 10px;
-    font-weight: bolder;
-    margin-top:30px;
-}
-
-
-
-     /* SECTION LES PLUS POPULAIRES */
-.plus-populaires
-{
-   
     display: flex;
-    background-color: red;
+    list-style-type: none;
+    color: #0065FC;
+    margin-top:-3px;
+    margin-left: -20px;
+    line-height:0.1 ;
 }
+
+/* SECTION BASSE DE L HEBERGEMENT A MARSEILLE*/ 
+.hotel-bas
+{
+    display: flex;
+}
+.hebergement-marseille h5
+{
+    margin-top: 30px;
+    margin-left: 15px;
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+
+
+
+  /* SECTION LES PLUS POPULAIRES */
+
+#partie-hebergement
+{
+    display: flex;
+    
+    
+}
+
+
+.plus-populaire
+{ 
+    width: 25%;
+    height: 450PX;
+    background-color: #f2F2F2;
+    border-radius: 15px 15px 15px 15px;
+    margin-left:40px;
+
+}
+.plus-populaire img
+{
+    object-fit: cover;
+    width: 90px;
+    height: 100px ;
+    border-radius: 15px 0 0 15px;
+    padding-left: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.title-populaire
+{
+  display: flex;
+  justify-content:space-between;
+  align-items: CENTER;
+  padding-top:30px;
+  
+}
+.title-populaire h4
+{
+    font-size: 17px;
+    font-weight: BOLDER;
+    padding-left: 30px;
+}
+.title-populaire i
+{
+    padding-right: 30px;
+    font-size: 20px;
+    
+}
+
 
 .hotel-lesoleil
-{   
-    
-    object-fit: cover;
+{   display: flex;
+    margin-left: 25px;
+    margin-top: 25px;
+    background-color:white;
+    width: 260px;
+    height: 100px;
+    border-radius: 15px 15px 15px 15px;
+
+  
+}
+.plus-populaire h4
+{
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: bolder;
+    padding-top:10px;
+}
+.plus-populaire p
+{
+    font-size: 13px;
+    line-height: 0.1;
+    padding-top:5px;
+    padding-left:10px;
 }
 
+.plus-populaire ul
+
+{   display: flex;
+    color:#0065FC;
+    margin-left:-20px;
+    line-height: 0.1;
+    list-style: none;
+
+}
+.icone-coeur
+{
+    color:grey;
+    opacity: 0.3;
+}
+.hotel-coeur
+
+{   
+    display: flex;
+    margin-left: 25px;
+    margin-top: 25px;
+    background-color:white;
+    width: 260px;
+    height: 100px;
+    border-radius: 15px 15px 15px 15px;
+ 
+}
+
+.toutbleu
+{
+    display: flex;
+    margin-left: 25px;
+    margin-top: 25px;
+    background-color:white;
+    width: 260px;
+    height: 100px;
+    border-radius: 15px 15px 15px 15px;
+}
 
 
 
