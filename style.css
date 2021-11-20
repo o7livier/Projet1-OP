@@ -290,7 +290,7 @@ span h4
 {   
     background-color:#f2F2F2;
     padding-left: 20px;
-    width: 52%;
+    width: 650px;
     height: 450px;
     border-radius: 15px 15px 15px 15px;
 }
@@ -368,14 +368,14 @@ border-radius: 15px 15px 0 0;
 
 #partie-hebergement
 {
-    display: flex;
+   display: flex;
     
     
 }
 
 
 .plus-populaire
-{ 
+{   
     width: 25%;
     height: 450PX;
     background-color: #f2F2F2;
@@ -419,7 +419,7 @@ border-radius: 15px 15px 0 0;
 .hotel-lesoleil
 {   display: flex;
     margin-left: 25px;
-    margin-top: 25px;
+    margin-top: 10px;
     background-color:white;
     width: 260px;
     height: 100px;
@@ -480,6 +480,72 @@ border-radius: 15px 15px 0 0;
     border-radius: 15px 15px 15px 15px;
 }
 
+ /* PARTIE ACITVITE A MARSEILLE*/
+
+ #activity
+ {
+     margin-top: 30px;
+     font-size: 17px;
+     font-weight: bolder;
+ }
+
+ .photo-vieuxport
+ {
+     width:220px;
+     height:230px;
+     object-fit: cover;
+     border-radius:15px 15px 0 0 ;
+ }
+ 
+ .activite-marseille h4
+ {
+     font-size: 15px;
+    margin-top:10px;
+    font-weight: bolder;
+     padding-left: 10px;
+ }
+.vieux-port
+{
+    background-color: red;
+    width: 220px;
+    height: 270PX;
+    border-radius:15px 15px 15px 15px ;
+  
+}
+.photo
+{
+    display:flex;
+}
+.pomegue-frioul
+{
+    width:290px;
+     height:130px;
+     background-color: red;
+     margin-left: 30px;
+    border-radius:15px 15px 15px 15px ;
+
+    
+  
+}
+.photo-pomegue
+{
+    width: 230px;
+    height: 100px ;
+    object-fit: cover;
+     border-radius:15px 15px 0 0 ;
+
+     
+  
+}
+
+.photo-frioul
+{
+    width: 230px;
+    height: 100px;
+    object-fit: cover;
+    border-radius:15px 15px 0 0 ;
+
+}
 
 
                /* FOOTER*/
@@ -513,4 +579,4 @@ footer
  }
 
 
- 
+                   
