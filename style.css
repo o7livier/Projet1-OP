@@ -2,7 +2,8 @@ body
 {
     font-family: "Raleway", sans-serif;
     font-size:15px;
-    margin-LEFT:30px;
+    margin-left:50px;
+   
 
 }
 header
@@ -480,13 +481,14 @@ border-radius: 15px 15px 0 0;
     border-radius: 15px 15px 15px 15px;
 }
 
- /* PARTIE ACITVITE A MARSEILLE*/
+        /* PARTIE ACTIVITE A MARSEILLE*/
 
  #activity
  {
      margin-top: 30px;
-     font-size: 17px;
+     font-size: 16px;
      font-weight: bolder;
+     margin-bottom: 20px;
  }
 
  .photo-vieuxport
@@ -499,54 +501,130 @@ border-radius: 15px 15px 0 0;
  
  .activite-marseille h4
  {
-     font-size: 15px;
+     font-size: 12px;
     margin-top:10px;
     font-weight: bolder;
-     padding-left: 10px;
+     padding-left: 15px;
  }
+
 .vieux-port
 {
-    background-color: red;
+    background-color:white;
     width: 220px;
-    height: 270PX;
+    height: 260PX;
     border-radius:15px 15px 15px 15px ;
+    box-shadow: 0.5px 0.5px 7px grey;
   
 }
 .photo
 {
-    display:flex;
+    display: flex;
 }
 .pomegue-frioul
 {
-    width:290px;
-     height:130px;
-     background-color: red;
-     margin-left: 30px;
-    border-radius:15px 15px 15px 15px ;
-
-    
-  
+    display: flex;
+    flex-direction: column;
 }
-.photo-pomegue
+.pomegue
 {
-    width: 230px;
+    width:220px;
+    height:130px;
+    background-color:white;
+    margin-left: 30px;
+    border-radius:15px 15px 15px 15px ;
+    box-shadow: 0.5px 0.5px 7px grey;
+ 
+}
+.pomegue img
+{
+    width: 220px;
     height: 100px ;
     object-fit: cover;
-     border-radius:15px 15px 0 0 ;
+    border-radius:15px 15px 0 0 ;
 
      
   
 }
-
-.photo-frioul
+.frioul
 {
-    width: 230px;
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    width:220px;
+    height:100px;
+    background-color:white;
+    margin-left: 30px;
+    border-radius:15px 15px 15px 15px ;
+    box-shadow: 0.5px 0.5px 7px grey;
+    margin-top: 30px;
+}
+
+.frioul img
+{
+    width: 220px;
+    height: 70px;
+    object-fit: cover;
+    border-radius:15px 15px 0 0 ;
+    
+    
+
+}
+.calanques
+{
+    background-color:white;
+    width: 220px;
+    height: 260PX;
+    border-radius:15px 15px 15px 15px ;
+    box-shadow: 0.5px 0.5px 7px grey;
+    margin-left: 30px;
+}
+.calanques img
+{
+     width:220px;
+     height:230px;
+     object-fit: cover;
+     border-radius:15px 15px 0 0 ;
+
+}
+.notredame-longchamp
+{
+    display: flex;
+    flex-direction: column;
+}
+.notre-dame
+{
+    width:220px;
+    height:130px;
+    background-color:white;
+    margin-left: 30px;
+    border-radius:15px 15px 15px 15px ;
+    box-shadow: 0.5px 0.5px 7px grey;
+}
+.notre-dame img
+{
+    width: 220px;
+    height: 100px ;
     object-fit: cover;
     border-radius:15px 15px 0 0 ;
 
 }
-
+.longchamp
+{
+    width:220px;
+    height:100px;
+    background-color:white;
+    margin-left: 30px;
+    border-radius:15px 15px 15px 15px ;
+    box-shadow: 0.5px 0.5px 7px grey;
+    margin-top: 30px;
+}
+.longchamp img
+{
+    width: 220px;
+    height: 70px;
+    object-fit: cover;
+    border-radius:15px 15px 0 0 ;
+    
+}
 
                /* FOOTER*/
 footer
@@ -554,6 +632,8 @@ footer
     background-color: #f2F2F2;
     display: flex;
    justify-content:space-between;
+   margin:-50px;
+   margin-top: 30px;
 }
  footer h4
  {
