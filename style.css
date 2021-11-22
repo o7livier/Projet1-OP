@@ -2,7 +2,7 @@ body
 {
     font-family: "Raleway", sans-serif;
     font-size:15px;
-    margin-left:50px;
+    margin-left:55px;
    
 
 }
@@ -26,10 +26,10 @@ header
 header ul
 {  
      display: flex; 
-    margin: 0 ;
-    padding:0;
+     justify-content:space-around;
+     align-items: CENTER;
     list-style-type: none;
-    margin-right: 30px;
+    margin-right: 300px;
 
 }
 
@@ -377,11 +377,13 @@ border-radius: 15px 15px 0 0;
 
 .plus-populaire
 {   
-    width: 25%;
+    width: 350px;
     height: 450PX;
     background-color: #f2F2F2;
     border-radius: 15px 15px 15px 15px;
     margin-left:40px;
+    padding-left: 20px;
+    
 
 }
 .plus-populaire img
@@ -501,7 +503,7 @@ border-radius: 15px 15px 0 0;
  
  .activite-marseille h4
  {
-     font-size: 12px;
+     font-size: 10px;
     margin-top:10px;
     font-weight: bolder;
      padding-left: 15px;
@@ -530,7 +532,7 @@ border-radius: 15px 15px 0 0;
     width:220px;
     height:130px;
     background-color:white;
-    margin-left: 30px;
+    margin-left: 45px;
     border-radius:15px 15px 15px 15px ;
     box-shadow: 0.5px 0.5px 7px grey;
  
@@ -552,7 +554,7 @@ border-radius: 15px 15px 0 0;
     width:220px;
     height:100px;
     background-color:white;
-    margin-left: 30px;
+    margin-left: 45px;
     border-radius:15px 15px 15px 15px ;
     box-shadow: 0.5px 0.5px 7px grey;
     margin-top: 30px;
@@ -575,7 +577,7 @@ border-radius: 15px 15px 0 0;
     height: 260PX;
     border-radius:15px 15px 15px 15px ;
     box-shadow: 0.5px 0.5px 7px grey;
-    margin-left: 30px;
+    margin-left: 45px;
 }
 .calanques img
 {
@@ -595,7 +597,7 @@ border-radius: 15px 15px 0 0;
     width:220px;
     height:130px;
     background-color:white;
-    margin-left: 30px;
+    margin-left: 45px;
     border-radius:15px 15px 15px 15px ;
     box-shadow: 0.5px 0.5px 7px grey;
 }
@@ -612,7 +614,7 @@ border-radius: 15px 15px 0 0;
     width:220px;
     height:100px;
     background-color:white;
-    margin-left: 30px;
+    margin-left: 45px;
     border-radius:15px 15px 15px 15px ;
     box-shadow: 0.5px 0.5px 7px grey;
     margin-top: 30px;
@@ -655,7 +657,7 @@ footer
  }
  .help-footer
  {
-     padding-right: 200px;
+     padding-right: 625px;
  }
 
 
