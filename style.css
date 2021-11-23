@@ -1,8 +1,90 @@
+                 /* PARTIE PORTABLE 768PX*/
+@media screen and (max-width: 768PX)
+{
+     
+   body 
+   {
+       padding:0;
+       margin: 0;
+   }
+    header
+    {
+        border:1px solid red;
+        display: flex;
+       flex-direction: column;
+      
+       
+    }
+  .photo
+    {
+        border:1px solid red;
+        height: 40px;
+        padding-left: 10px; 
+
+        
+        
+       
+    }
+    header ul
+    {    
+        border:1px solid GREEN;
+    
+ 
+        
+    }
+    header li
+    {    
+        
+        font-size: 13px;
+        border:1px solid RED;
+       
+       
+    }/* 
+    header a:hover
+    {
+        border-top: hidden;
+        border-bottom:3px solid #0065FC;
+        padding-bottom: 20PX;
+    }*/
+
+    /* TEXTE SOUS LOGO*/
+    .under-logo 
+    {
+        border:1px solid red;
+       
+    }
+      
+
+  /* BARRE DE RECHERCHE*/
+
+  .bar-search 
+  {
+    border:1px solid green;
+
+  }
+ 
+  
+.bouton
+{
+   
+    width: 25px;
+    height: 25px;
+    border-radius: 7px 7px 7px 7px;
+   
+
+
+}
+
+
+
+}
+    
+           /* PARTIE ORDINATEUR */
 body
 {
     font-family: "Raleway", sans-serif;
     font-size:15px;
-    margin-left:55px;
+  
    
 
 }
@@ -13,32 +95,33 @@ header
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
+    margin-left:55px;
    
   
 }
 .photo 
 {   
    
-    width: 4rem;
+    width: 50px;
 
 }
 
 header ul
 {  
      display: flex; 
-     justify-content:space-around;
-     align-items: CENTER;
     list-style-type: none;
-    margin-right: 300px;
+    padding-left:80px;
+    margin-left: 600px;  
 
 }
 
 header li
 {
  
- margin: 15px 20px;
+ margin-left: 140px;
  cursor: pointer;
  font-size: 13px; 
+ border:1px solid red;
 
 }
 header a
@@ -53,7 +136,7 @@ header a:hover
   
   border-top:3px solid #0065FC;
   text-decoration:none; 
-  padding-top: 44px;
+  padding-top: 30px;
   
 }
                   /*TEXTE SOUS LOGO*/
@@ -62,12 +145,17 @@ header a:hover
     font-size: 11px;
     font-weight: bolder;
     margin-top: 30px;
+    margin-left:55px;
+
 }
        
 
 .under-logo p
 {
     font-size:10PX;
+    margin-left:55px;
+
+
 }
        /* BARRE DE RECHERCHE*/
 
@@ -80,6 +168,8 @@ header a:hover
     border-radius:7px 0 0 7px;
     padding-left:10px;
     padding-top: 8px;
+    margin-left:55px;
+
    
     
    
@@ -98,10 +188,7 @@ header a:hover
     border-right-style:none ;
     margin-left: -10px;
     margin-right:-10px;
-    font-size: 12px;
-   
-    
-    
+    font-size: 12px;    
       
 } 
 button
@@ -127,6 +214,8 @@ button
     align-items: center;
     padding: 0px;
     margin-top: 30px;
+    margin-left:55px;
+
     
 }
 .filter li
@@ -263,6 +352,8 @@ span
 {
     display: flex;
     margin-top: 40px;
+    margin-left:55px;
+
   
 }
 span i
@@ -280,12 +371,22 @@ span h4
 
 
 /*SECTION HEBERGEMENT A MARSEILLE */
+
+#partie-hebergement
+{
+    margin-left:55px;
+
+}
+
+
 #house 
+
 {
     font-size: 17px;
     font-weight: bolder;
     margin-top: 10px;
     padding-top: 20px;
+    margin-left: 15px;
 }
 .hebergement-marseille
 {   
@@ -294,6 +395,7 @@ span h4
     width: 650px;
     height: 450px;
     border-radius: 15px 15px 15px 15px;
+   
 }
 .hebergement-marseille img
 {
@@ -335,6 +437,7 @@ border-radius: 15px 15px 0 0;
 .hotel-haut
 {
     display: flex;
+   margin-right: 30px;
   
 }
 
@@ -353,6 +456,7 @@ border-radius: 15px 15px 0 0;
 .hotel-bas
 {
     display: flex;
+    margin-right: 30px;
 }
 .hebergement-marseille h5
 {
@@ -381,9 +485,8 @@ border-radius: 15px 15px 0 0;
     height: 450PX;
     background-color: #f2F2F2;
     border-radius: 15px 15px 15px 15px;
-    margin-left:40px;
-    padding-left: 20px;
-    
+    margin-left:20px;
+    padding-right: 30px;
 
 }
 .plus-populaire img
@@ -491,8 +594,14 @@ border-radius: 15px 15px 0 0;
      font-size: 16px;
      font-weight: bolder;
      margin-bottom: 20px;
- }
+  
 
+ }
+.activite-marseille
+{
+    margin-left:55px;
+    
+}
  .photo-vieuxport
  {
      width:220px;
@@ -633,9 +742,9 @@ footer
 {
     background-color: #f2F2F2;
     display: flex;
-   justify-content:space-between;
-   margin:-50px;
+   justify-content:space-between; 
    margin-top: 30px;
+   list-style: none;
 }
  footer h4
  {
@@ -653,12 +762,15 @@ footer
  {
    
     margin:20px;
+    list-style: none;
    
  }
  .help-footer
  {
-     padding-right: 625px;
+     padding-right: 400PX;
  }
+
+
 
 
                    
