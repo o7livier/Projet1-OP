@@ -1,102 +1,66 @@
                  /* PARTIE ORDINATEUR*/
-
-
-body
-{
+body{
     font-family: "Raleway", sans-serif;
     margin-left: 30px;
-  
-   
- 
-
-   
-
 }
-.header
-{
-    
-    width: 100vw;
-    height:20vh;
+.grid-container{
     display: grid;
-   
-    
-
-    
+    grid-template-rows:0.2fr 2fr 3fr 3fr 2fr ;   
 }
-
-.photo 
-{
-    grid-column: 1;
-    width: 60px;
-    margin-top: 25px;
-    
-
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 875px;
 }
-nav
-{
-    grid-column: 6;
-
+.photo{
+    margin-top:20px;
+    width:50px;
+    height:30px; 
 }
-nav ul
-{
-     display: flex;
-    justify-content: center;
-    align-items: center;    
-    
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items:center; 
+    padding-right: 30px;  
 }
-nav li
-{
-    margin-left: 30px;
-    padding-left: 50px;
-    font-size: 11px;
-    list-style: none;    
-
+nav li{
+    margin-left: 50PX;    
 }
-nav a
-{
-    text-decoration:none;
-    color: black;   
-    
-
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
 }
-nav a:hover 
-{
+nav a:hover{
     border-top: 2px solid #0065FC;
-    color: black;   
- 
+    padding-bottom:20px;   
 }
-.under-logo
-{
+/**************SECTION RECHERCHE******************/
+.section0{    
+    display:grid;
+    grid-template-rows:repeat(6,0.2FR);        
+}
+.under-logo{  
     margin-top:30px;
 }
-.under-logo h3
-{
+.under-logo h3{
     font-size: 14px;
     font-weight: bolder;
 }
-.under-logo p
-{
+.under-logo p{
     font-size: 11px;
 }
-             /* BARRE DE RECHERCHE*/
+             /**************** BARRE DE RECHERCHE*********************/
 
-.bar-search i
-{
+.bar-search i{
     background-color:#f2F2F2;
     border-radius: 10px 0 0 10px;
     width: 35px;
     height: 29px;
     padding-top: 9px;
-    padding-left: 12px;
-
-    
-    
-   
-
+    padding-left: 12px;    
 }
-.search
-{
-    
+.search{   
     border-left: none;
     font-weight:bolder;
     margin-top: 10px;
@@ -106,69 +70,49 @@ nav a:hover
     padding-bottom:4.5px;
     border:2px solid #F2F2F2;
     margin-left: -10px;
-    WIDTH:150px;
-    
+    width:150px;   
 }
-button
-{
+button{
     background-color: #0065FC;
-    color:blanchedalmond;
+    color:WHITE;
     border-radius: 0px 10px 10px 0px;
     margin-left:-10px;
     border:none;
     width: 80px;
     height: 29px;
     font-size: 10px;
-    padding-top: 5px;
-    
+    padding-top: 5px;   
+}   
+        /*********************** LES FILTRES  *********************/
+.section-filtre{
+    display:flex;
+    margin-top: 20px; 
 }
-    
-        /* LES FILTRES  */
-
-.section1
-{
-    display:grid;
-   grid-template-columns: repeat(12,50PX); 
-   margin-top:20px;
-   list-style: none;
-  
+.section-filtre ul{
+    display: flex;
+    list-style: none;
 }
-
-
-.section1 h2
-{
-    
+.section-filtre h2{   
     font-size:12px;
     font-weight:bolder;
     padding-top:17px;
-
-   
 }
-
-
-.section1 h3
-{
+.section-filtre h3{
     font-size: 11px;
     font-weight: bolder;
 }
-
-.titre-economie
-{
-   
+.titre-economie{  
     border:1.6pX solid rgb(231, 227, 227);
     border-radius: 0px 15px 15PX 0PX;
     margin-top: 10px;
-    width: 95px;
+    width: 100px;
     height: 30px;
     border-left:none;
-    margin-left:-33px;
+    margin-left:-15px;
     padding-top:7px;
-    padding-left:19px
-   
+    padding-left:22px;  
 }
-
-.logo-economie
-{
+.logo-economie{
     background-color: #DEEBFF;
     list-style: none;   
     color:blue;
@@ -177,167 +121,358 @@ button
     border-radius: 20Px 20px;
     margin-top:10px;
     padding-left:7px;
-    padding-top:2px;  
-
-    
+    padding-top:2px;      
 }
-.logo-familial
-{
+.titre-familial{
+    border: 1.6px solid rgb(231, 227, 227);
+    border-radius: 0px 15px 15PX 0PX;
+    margin-top: 10px;
+    width: 80px;
+    height: 29px;
+    padding-left: 20px;
+    padding-top: 7px;
+    border-left:none;
+    margin-left:-10px;
+}
+.logo-familial{
     background-color: #DEEBFF;
     width: 30px;
     height: 30PX;
     border-radius:20px 20px;  
     color:blue;
-    margin-left: 25px;
+    margin-left:10px;
     margin-top: 10px;
     padding-top:2px;
-    padding-left:10px;
-    
-    
+    padding-left:10px;   
 }
-
-.titre-familial
-{
-    border: 1.6px solid rgb(231, 227, 227);
-    border-radius: 0px 15px 15PX 0PX;
-    margin-top: 11px;
-    width: 80px;
-    height: 29px;
-    padding-left: 20px;
-    padding-top: 6px;
-    border-left:none;
-    margin-left:-5px
-}
-.logo-heart
-{
+.logo-heart{
     background-color: #DEEBFF;
     border-radius:20px 20px;
     list-style: none;   
     color:blue;
     width: 30px;
     height: 30PX;
-    margin-left: 40px;
-    margin-top:10px;
+    margin-left:10px;  
+    margin-top:10.5px;
     padding-left:8px;
-    padding-top:3px;
-
-   
+    padding-top:3px;  
 }
-.titre-heart
-{
+.titre-heart{
     border:1.6pX solid rgb(231, 227, 227);
     border-radius: 0px 15px 15PX 0PX;
     margin-top: 11px;
     width: 100px;
     height: 29px;
     border-left:none;
-    padding-left: 25px;
+    padding-left: 22px;
     padding-top: 6px;
-
+    margin-left:-10px
 }
-.titre-dog
-{
+.titre-dog{
     border:1.6pX solid rgb(231, 227, 227);
     border-radius: 0px 15px 15PX 0PX;
     margin-top: 11px;
     width: 125px;
     height: 29px;
     border-left:none;
-    margin-left:30px;
+    margin-left:-10px;
     padding-left:17px;
     padding-top:6px;
 }
-.logo-dog
-{
+.logo-dog{
     background-color: #DEEBFF;
     width: 30px;
     height: 30px;
     border-radius:20px 20px ;
     list-style: none;   
     color:blue;
-    margin-left:60px;
+    margin-left:10px;
     margin-top:10px;
     padding-left:8px; 
-    padding-top:1px;
-    
+    padding-top:1px;    
 }
-           /*TEXTE SOUS LE FILTRE */
-.logement 
-{
+           /********************TEXTE SOUS LE FILTRE *******************/
+.logement {
     display: flex;
     margin-top: 30px;
 }
 
-.logement i
-{
+.logement i{
     color:#0065FC;
     padding-right: 10px;
 }
-.logement h4
-{
+.logement h4{
     font-size: 9px;
 }
-        /* PARTIE HEBERGEMENT A MARSEILLE*/
-
-#partie-hebergement
-{
-    margin-top:30px;
-
-    
+        /*************** PARTIE HEBERGEMENT A MARSEILLE***********/
+.section1{
+    display:flex;
+    width:875px;
 }
-#house
-{
+#house{
     font-size:13px;
     font-weight: bolder;
-    margin-top:20px;
     margin-left: 30px;
+    padding-top: 20px;
 }
-.hebergement-marseille
-{
-    display: grid;
-    background-color: red;
+.hebergement-marseille{
+    background-color:#f2F2F2;
     border-radius:15px 20PX;
-    width: 520PX;
-    height: 400PX;
-
-
+    width: 530PX;
+    height: 380PX;
 }
-.auberge-cannebiere
-{
- background-color:whitesmoke;
- width: 150px;
- height: 100px;
- margin-left:30px;
- border-radius: 15px 15px;
+.hotel-haut{
+    display:grid;
+    grid-template-columns: repeat(3,2fr);
+    margin-top:15px;
 }
-.auberge-cannebiere h4 
-{
+h4{
+    font-size:8px;
+    font-weight: bolder;
+    padding-left: 8px;
+    padding-top:5px;  
+    line-height: 0.8;    
+}
+.hotel-haut p{
+   font-size: 7px;
+   padding-left: 8px;
+   margin-top: -5px;
+}
+.auberge-cannebiere{
+    background-color:white;
+    width: 140px;
+    height: 105px;
+    margin-left:20px;
+    border-radius: 15px 15px;
+   }
+.photo-cannebiere{
+    object-fit: cover;
+    width: 135px;
+    height: 60px;
+    border-radius: 15px 15px 0 0;
+    margin-left:2.5px;
+    margin-top:3px;
+}
+.icone {
+    list-style-type: none;  
+    display: flex;
+    font-size: 7px;
+    margin-top:-15px;
+    margin-left:-23px; 
+    color:#0065FC;  
+}
+.icone-gris{
+    color:grey;
+    opacity:0.4;
+}
+.hotel-port{
+    background-color:white;
+    width: 140px;
+    height: 105px;
+    margin-left:20px;
+    border-radius: 15px 15px;
+   }
+   .photo-port{
+    object-fit: cover;
+    width: 135px;
+    height: 60px;
+    border-radius: 15px 15px 0 0;
+    margin-left:2.5px;
+    margin-top:3px;
+}
+.hotel-mouette{
+    background-color:white;
+    width: 140px;
+    height: 105px;
+    margin-left:20px;
+    border-radius: 15px 15px;
+}
+.photo-mouette{
+    object-fit: cover;
+    width: 135px;
+    height: 60px;
+    border-radius: 15px 15px 0 0;
+    margin-left:2.5px;
+    margin-top:3px;
+}
+.hotel-mer{
+    background-color:white;
+    width: 140px;
+    height: 105px;
+    margin-left:20px;
+    border-radius: 15px 15px;
+    margin-top:30px;
+}
+.photo-mer{
+    object-fit: cover;
+    width: 135px;
+    height: 60px;
+    border-radius: 15px 15px 0 0;
+    margin-left:2.5px;
+    margin-top:3px;
+}
+.hotel-panier{
+    background-color:white;
+    width: 140px;
+    height: 105px;
+    margin-left:20px;
+    border-radius: 15px 15px;
+    margin-top: 30px;
+}
+.photo-panier{
+    object-fit: cover;
+    width: 135px;
+    height: 60px;
+    border-radius: 15px 15px 0 0;
+    margin-left:2.5px;
+    margin-top:3px;
+}
+.hotel-amina{
+    background-color:white;
+    width: 140px;
+    height:105 ;
+    margin-left:20px;
+    border-radius: 15px 15px;
+    margin-top:30px;
+}
+.photo-amina{
+    object-fit: cover;
+    width: 135px;
+    height: 60px;
+    border-radius: 15px 15px 0 0;
+    margin-left:2.5px;
+    margin-top:3px;
+}
+.hebergement-marseille h5{
+    margin-top:30px;
+    font-size:10px;
+    margin-left:30px;
+    font-weight:bolder;
+}
+/******************PARTIE LES PLUS POPULAIRES********************/
+.section-cote{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.section2 i{
+    padding-top:10px;
+}
+.section2{
+   background-color:#f2F2F2;
+   border-radius:25px 25PX;
+   width: 250px;
+   height: 380px;
+   margin-left:20px;  
+}
+.section2 h3{
+    font-size: 13px;
+    font-weight: bolder;
+    padding-top:20px;
+    padding-right:60px;
+}
+.section2 h4{   
     font-size:9px;
     font-weight: bolder;
     padding-left: 8px;
-    padding-top:3px;
-   
+    padding-top:10px;       
 }
-.auberge-cannebiere p
-{
- font-size: 7px;
-padding-left: 8px;
-margin-top: -5px;
+.section2 p{
+    font-size:8px;
+    margin-left:8px;
+    line-height: 0.5;
 }
-
-.photo-cannebiere
-{
+.section2 li{
+     margin-top: 20px;
+}
+.hotel-lesoleil{
+    background-color:white;
+    width: 190px;
+    height: 80px;
+    margin-left:25px;
+    border-radius:15px 15px 15px 15px;   
+    display: flex; 
+    margin-top:10px;      
+}
+.photo-lesoleil {
     object-fit: cover;
-    width: 145px;
-    height: 60px;
-    border-radius: 15px 15px 0 0;
+    width:70px;
+    height:75px;
+    margin-top:2.5px;
     margin-left:2px;
-    margin-top:2px;
+    margin-bottom:2px;
+    border-radius:15px 0 0 15px;
 }
-.icone 
-{
+.le-soleil{ 
+    display: flex;
+    flex-direction: column;  
+}
+.hotel-coeur{
+    background-color:white;
+    width: 190px;
+    height: 80px;
+    margin-left:25px;
+    border-radius:15px 15px 15px 15px;   
+    display: flex;
+    margin-top: 20px;      
+}
+.photo-coeur {
+    object-fit: cover;
+    width:70px;
+    height:75px;
+    margin-top:2.5px;
+    margin-left:2px;
+    margin-bottom:2px;
+    border-radius:15px 0 0 15px;
+}
+.hotel-bleu{
+    background-color:white;
+    width: 190px;
+    height: 80px;
+    margin-left:25px;
+    border-radius:15px 15px 15px 15px;   
+    display: flex;
+    margin-top: 25px;       
+}
+.photo-bleu{
+    object-fit: cover;
+    width:70px;
+    height:75px;
+    margin-top:2.5px;
+    margin-left:2px;
+    margin-bottom:2px;
+    border-radius:15px 0 0 15px;
+}
+/**********************PARTIE ACTIVITEE A MARSEILLE*****************************/
+.activite-marseille{
     display: grid;
-   
-    list-style-type: none;
-    
+    grid-template-columns:repeat (5,1fr);
+    margin-bottom: 350px;
+}
+.activite-marseille h4{
+    font-size: 14px;
+    font-weight: bolder;
+}
+.activite-marseille h5{
+    font-size:9px;
+    font-weight:bolder;
+    margin-top:10px;
+    margin-left: 10px;
+}
+.vieux-port{
+    background-color:white;
+    width: 180px;
+    height:280px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 1px 1PX 1PX grey;
+
+}
+.photo-vieuxport{
+    object-fit: cover;
+    width: 180px; 
+    height: 250px;
+    border-radius: 15px 15px 0 0;
+}
+.photo{
+    display:flex;
 }
