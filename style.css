@@ -1,21 +1,27 @@
                  /* PARTIE ORDINATEUR*/
 body{
     font-family: "Raleway", sans-serif;
-    margin-left: 30px;
+    margin-left: 40px;
+    height: 100vh;
+    
+
 }
 .grid-container{
     display: grid;
-    grid-template-rows:0.2fr 2fr 3fr 3fr 2fr ;   
+   
+    grid-template-rows:0.3fr 0.3fr 0.3fr 0.3fr ; 
 }
 .header{
     display: flex;
     justify-content: space-between;
-    width: 875px;
+    align-items: center; 
+    width: 900px;  
 }
 .photo{
-    margin-top:20px;
+    
     width:50px;
     height:30px; 
+    margin-bottom: 10px;
 }
 nav ul{
     list-style: none;
@@ -38,7 +44,8 @@ nav a:hover{
 /**************SECTION RECHERCHE******************/
 .section0{    
     display:grid;
-    grid-template-rows:repeat(6,0.2FR);        
+    grid-template-rows:repeat(4,0.2FR); 
+         
 }
 .under-logo{  
     margin-top:30px;
@@ -194,20 +201,21 @@ button{
            /********************TEXTE SOUS LE FILTRE *******************/
 .logement {
     display: flex;
-    margin-top: 30px;
+    margin-bottom:14px;
 }
 
 .logement i{
     color:#0065FC;
     padding-right: 10px;
 }
-.logement h4{
+.logement h5{
     font-size: 9px;
 }
         /*************** PARTIE HEBERGEMENT A MARSEILLE***********/
 .section1{
-    display:flex;
-    width:875px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    width:850px;  
 }
 #house{
     font-size:13px;
@@ -218,7 +226,7 @@ button{
 .hebergement-marseille{
     background-color:#f2F2F2;
     border-radius:15px 20PX;
-    width: 530PX;
+    width: 550px;
     height: 380PX;
 }
 .hotel-haut{
@@ -353,7 +361,7 @@ h4{
 .section-cote{
     display: flex;
     justify-content:center;
-    align-items: center;
+    align-items: center;   
 }
 .section2 i{
     padding-top:10px;
@@ -444,11 +452,6 @@ h4{
     border-radius:15px 0 0 15px;
 }
 /**********************PARTIE ACTIVITEE A MARSEILLE*****************************/
-.activite-marseille{
-    display: grid;
-    grid-template-columns:repeat (5,1fr);
-    margin-bottom: 350px;
-}
 .activite-marseille h4{
     font-size: 14px;
     font-weight: bolder;
@@ -459,20 +462,118 @@ h4{
     margin-top:10px;
     margin-left: 10px;
 }
+.marseille-photo{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr;
+}
 .vieux-port{
     background-color:white;
-    width: 180px;
+    width: 190px;
     height:280px;
     border-radius: 15px 15px 15px 15px;
-    box-shadow: 1px 1PX 1PX grey;
-
+    box-shadow: 1px 1PX 1PX grey;   
 }
 .photo-vieuxport{
     object-fit: cover;
-    width: 180px; 
+    width: 190px; 
     height: 250px;
     border-radius: 15px 15px 0 0;
 }
-.photo{
-    display:flex;
+.pomegue-frioul{
+    margin-left :20px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+}
+.pomegue{
+    background-color:white;
+    width: 190px;
+    height:140px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 1px 1PX 1PX grey;  
+}
+.photo-pomegue{
+    object-fit: cover;
+    width: 190px; 
+    height: 90px;
+    border-radius: 15px 15px 0 0;
+}
+.frioul{
+    background-color:white;
+    width: 190px;
+    height:120px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 1px 1PX 1PX grey;
+    margin-top:20px;
+}
+.photo-frioul{
+    object-fit: cover;
+    width: 190px; 
+    height: 90px;
+    border-radius: 15px 15px 0 0;
+}
+.calanques{
+    background-color:white;
+    width: 190px;
+    height:280px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 1px 1PX 1PX grey; 
+    margin-left: 20px;
+}
+.photo-calangues{
+    object-fit: cover;
+    width: 190px; 
+    height: 250px;
+    border-radius: 15px 15px 0 0;
+}
+.notredame-longchamp{
+    margin-left :20px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+}
+.notre-dame{
+    background-color:white;
+    width: 190px;
+    height:140px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 1px 1PX 1PX grey;
+    
+}
+.photo-notredame{
+    object-fit: cover;
+    width: 190px; 
+    height: 90px;
+    border-radius: 15px 15px 0 0;
+}
+.longchamp{
+    background-color:white;
+    width: 190px;
+    height:120px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 1px 1PX 1PX grey;
+    margin-top:20px;
+}
+.photo-longchamp{
+    object-fit: cover;
+    width: 190px; 
+    height: 90px;
+    border-radius: 15px 15px 0 0;
+}
+/*************************** FOOTER **********************************/
+footer{
+    margin-top:40px;
+    background-color:#f2F2F2;
+    display: grid;
+    grid-template-columns: 0.25fr 0.29fr 0.3fr;
+    margin-left: -40PX;
+    padding-left:20px
+    
+}
+footer h4{
+    font-size: 12px;
+    font-weight: bolder;
+    margin-left:-7px;
+}
+footer ul{
+    list-style: none;
+    margin-top: 40px;
+}
+footer li{
+    font-size:9px;
 }
