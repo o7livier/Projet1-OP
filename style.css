@@ -1,14 +1,10 @@
   /***********************PARTIE SMARTPHONE********************************/
   @media screen and (max-width:768px){
-.grid-container{
- grid-template-rows:0.3fr,0.4fr,0.3fr,0.5FR,0.3fr,1fr,1fr 1fr;
- grid-template-columns: 0.5fr ;
- width: 100vh;
-}
+
 .header{  
     display:flex;
     flex-direction:column;
-    margin-right:180px
+    margin-left:70px;
 }
 nav{
  margin-right: 90px;
@@ -35,48 +31,69 @@ nav a:hover{
 }
 .section-filtre{
     margin-left: 350px;
-    display:flex;
-    flex-direction: column;
     margin-top: -40px;
     background-color: aqua;
     width: 190px;
 }
 .section-filtre ul{
-    display:flex;
+    display:flex; 
     flex-direction: column;
-    
 }
 .logement{
     margin-left: 350px;
-    width:210px
 }
 .section1{
- display: GRID;
- border:1px solid rgb(17, 255, 0);
-
- 
-
+margin-left: 300px;
 }
 .section2{
-    border:1px solid blue;
     order: 1;  
 }
 .hebergement-marseille{
- border:1px solid RED;
- ORDER:2    
+ order:2 ; 
+ grid-row: 2;
 }
-.activite-marseille{
- border:1px solid rgb(23, 200, 228);
- margin-left: 350px;
+.hotel-haut{
+ display: grid;
 }
-.marseille-photo{
- border:1px solid RED;
- display:grid;
-
- grid-template-rows: repeat(4,0.2fr);
-
-   
+.auberge-cannebiere{
+    grid-row:1;
 }
+.hotel-port{
+    grid-row:2;
+}
+.hotel-mouette{
+    grid-row:3;
+}
+.hotel-mer{
+    grid-row:4;
+}
+.hotel-panier{
+    grid-row:5;
+}
+.hotel-amina{
+    grid-row: 6;
+}
+.vieux-port{
+    grid-row: 1; 
+    border:1px solid blueviolet;   
+}
+.photo-vieuxport{
+    object-fit: cover;
+}
+.pomegue-frioul{
+    grid-row:2;
+}
+ .calanques{
+     grid-row: 3;
+ }
+ .notredame-longchamp{
+     grid-row: 4;
+ }
+ .activite-marseille{   
+     margin-left:300px ;
+     PADDING-TOP: 450px;
+     BORDER:1px solid red;
+ }
 
 .footer{
     display: flex;
