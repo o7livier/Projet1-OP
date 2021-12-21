@@ -2,34 +2,144 @@
 body{
     font-family: 'Raleway', sans-serif;
     margin: 0;
-   }
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 8 ;
+ }
 
 .navbar{
        display: grid;
        justify-content:center;
-       justify-items:center;
-       margin-top: 20px;
-   }
+       margin:0 auto;
+
+}
 .navbar img{
    height: 40px;
+   grid-column:1;
+   justify-self: center;
+   margin-right: 50px;
+   margin-top: 20PX;
 }
 .navbar ul{
-    display: flex; 
+    display: flex;
 }
 .navbar li{
      display: grid;
      grid-template-columns: 1fr 1fr;
     list-style: none;
-    margin-left:-20px;
+    margin: 0 52px 4px -39px;
 }
 .navbar a{
     text-decoration: none;
     color: black;
 }
-a:hover{
-    border-bottom:3px solid blue;
+ a:hover{
     padding-bottom:10px;
-  
+    border-bottom: 1px solid red;   
 }
 
+.section0{
+    font-size: 17PX;
 }
+.under-logo{
+    margin:auto 167px;
+    width:300px;
+    padding-right: 20px;
+
+}
+.under-logo p{
+    font-size:14px;
+    margin-top:-10px;
+}
+/******************* BARRE DE RECHERCHE**************/
+.bar-search{
+    margin:0 auto;
+    display:flex;
+    align-items: center;
+    width: 364px;
+    margin-top: 20PX;
+}
+.loupe{
+    background:#F2F2F2;
+    border-radius:30% 0 0 30%;
+    padding-left:10px;
+    height:35px;
+    width:35px;
+    padding-top:13px;
+}
+.bouton1{
+    display:none;
+}
+.bouton2{  
+
+    border-radius:30% 30%;
+    padding-left:5px;
+    height:50px;
+    width:50px;
+    color:white;
+    background-color: #0065FC;
+    border:0 solid transparent;
+    margin-left:-20px;  
+}
+.search{
+    font-weight:bolder;
+    height:39.5px;
+    border:2px solid #F2F2F2;
+    border-left: none;
+    padding-left:15px;  
+}
+
+/*******************FILTRES****************/
+.section-filtre ul{
+    display: grid;
+    justify-content: start;
+
+}
+.section-filtre li{
+    list-style-type: none;
+}
+.section-filtre h2{
+    font-size:16px;
+    margin-left:20px
+}
+.economie{
+    border:3px solid #F2F2F2;
+    padding: 10px 0px 5px 0px;
+    font-size:16px;
+    font-weight: bolder;
+    width: 190px;
+    border-radius: 40px;
+}
+.economie i{
+    color:#0065FC;
+    background-color: #deebff;
+    width:40px;
+    height:40px;
+    border-radius: 45% 45%;
+    margin: -16px 22px -8PX -21px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+.familial{
+    grid-column:2;
+    border:3px solid #F2F2F2;
+    padding:10px 0px 5px 0px;
+    font-size:16px;
+    font-weight: bolder;
+    width: 150px;
+    border-radius: 40px;
+    margin:0PX 0px 3px 50px;
+}
+.familial i{
+    color:#0065FC;
+    background-color: #deebff;
+    width:40px;
+    height: 40px;
+    border-radius: 45% 45%;
+    margin: -16px 22px -8PX -21px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+}
+

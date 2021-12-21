@@ -21,9 +21,9 @@
       <header class="header">
         <nav class="navbar">
           <img class="photo-navbar"src="images/logo/Booki.png" alt="photo du logo booki">
-            <ul>
+            <ul> 
               <li><a href="#house">Hébergements</a></li>
-              <li> <a href="#activity">Activités</a></li> 
+              <li><a href="#activity" class="bite">Activités</a></li> 
             </ul>
          </nav>
        </header>
@@ -36,7 +36,7 @@
 <!------------ BARRE DE RECHERCHE-------------------->
     
         <div class="bar-search">
-          <i class="fas fa-map-marker-alt fa-xs"></i>
+          <i class="fas fa-map-marker-alt fa-xs loupe"></i>
           <input class="search" type="search" value="Marseille , France">
           <button class="bouton1">Rechercher</button>
           <button class="bouton2"><i class="fas fa-search fa-xs"></i></button>
@@ -46,38 +46,16 @@
         <section class="section-filtre">
            <h2>Filtres</h2>
            <ul>
-            <li class="economie">
-              <li class="logo-economie">
-                <i class="fas fa-money-bill-wave fa-xs"></i>
-              </li>
-              <li class="titre-economie">
-               <h3>Economique</h3> 
-              </li>
-            </li>
-           <li class="Familial">
-              <li class="logo-familial">
-                <i class="fas fa-child fa-xs"></i>
-              </li>
-              <li class="titre-familial">
-                <h3>Familial</h3>
-              </li>
-          </li>
-        <li class="heart">
-            <li class="logo-heart">
-              <i class="fas fa-heart fa-xs "></i>
-            </li>
-            <li class="titre-heart">
-               <h3>Romantique</h3>
-             </li>
-        </li>
+              <li class="economie">
+                <i class="fas fa-money-bill-wave"></i>Économique</li>
+
+              <li class="familial">
+                <i class="fas fa-child"></i>Familial</li>
+             <li class="heart">
+                <i class="fas fa-heart fa-xs "></i>Romantique</li>
              <li class="dog">
-               <li class="logo-dog">
-                 <i class="fas fa-dog fa-xs"></i>
+                 <i class="fas fa-dog fa-m"></i>Animaux autorisés
                </li>
-                <li class="titre-dog">
-                 <h3>Animaux autorisés</h3>
-               </li>
-              </li>
            </ul>
         </section>
         <span class="logement"> <i class="fas fa-info-circle fa-xs"> </i>
@@ -219,34 +197,31 @@
  <!------------------------------------SECTION ACTIVITés A MARSEILLE------------------------------>
 <section class="activite-marseille">
       <h4 id="activity">Activités à Marseille</h4>
-    <section class="marseille-photo">
-        <div class="vieux-port">
-            <img class="photo-vieuxport"src="images/activites/4_small/port-marseille.jpg" alt="photo Vieux Port">
-            <h5>Vieux Port</h5>
-        </div>
-        <div class="pomegue-frioul">
-          <div class="pomegue">
-            <img class="photo-pomegue"src="images/activites/4_small/fort-depomégues.jpg" alt="photo Fort de Pomégues">
-            <h5>Fort de Pomégues</h5>
+      <section class="marseille-photo">
+          <div class="vieux-port" id="photo1">
+              <img class="photo-vieuxport"src="images/activites/4_small/port-marseille.jpg" alt="photo Vieux Port">
+              <h5>Vieux Port</h5>
           </div>
-         <div class="frioul"> 
-            <img  class="photo-frioul"src="images/activites/4_small/île-frioul.jpg" alt="photo Îles du Frioul">
-            <h5>Îles du Frioul</h5>
-        </div> 
+          <div class="pomegue-frioul">
+             <div class="pomegue" id="photo2">
+                <img class="photo-pomegue"src="images/activites/4_small/fort-depomegues.jpg" alt="photo Fort de Pomégues">
+                <h5>Fort de Pomégues</h5>
+            </div>
+            <div class="frioul" id="photo3"> 
+               <img  class="photo-frioul"src="images/activites/4_small/île-frioul.jpg" alt="photo Îles du Frioul">
+               <h5>Îles du Frioul</h5>
+            </div> 
+        </div>   
+        <div class="calanques" id="photo4">
+           <img class="photo-calangues"src="images/activites/4_small/parc-calenques.jpg" alt="photo Parc National des Calanques">
+           <h5>Parc National des Calanques</h5>
        </div> 
-
-       
-      <div class="calanques">
-        <img class="photo-calangues"src="images/activites/4_small/parc-calenques.jpg" alt="photo Parc National des Calanques">
-        <h5>Parc National des Calanques</h5>
-     </div>
-     
-    <div class="notredame-longchamp">          
-        <div class="notre-dame">
-          <img class="photo-notredame"src="images/activites/4_small/notredame-delagarde.jpg" alt="photo de notre dame de la garde">
-          <h5>Notre-Dame-de-la-garde</h5>
-        </div>
-       <div class="longchamp">
+       <div class="notredame-longchamp">          
+          <div class="notre-dame" id="photo5">
+            <img class="photo-notredame"src="images/activites/4_small/notredame-delagarde.jpg" alt="photo de notre dame de la garde">
+            <h5>Notre-Dame-de-la-garde</h5>
+          </div>
+       <div class="longchamp" id="photo6">
           <img class="photo-longchamp"src="images/activites/4_small/parc-longchamp.jpg" alt="photo du parc longchamp">
           <h5>Parc Longchamp</h5>
       </div>
