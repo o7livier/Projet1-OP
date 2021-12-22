@@ -57,7 +57,7 @@ body{
     margin:0 auto;
     display:flex;
     align-items: center;
-    width: 364px;
+    width: 378px;
     margin-top: 20PX;
 }
 .loupe{
@@ -67,6 +67,7 @@ body{
     height:35px;
     width:35px;
     padding-top:13px;
+    margin:10px -4px 9px -25px;
 }
 .bouton1{
     display:none;
@@ -84,16 +85,22 @@ body{
 }
 .search{
     font-weight:bolder;
-    height:39.5px;
+    height:47.5px;
+    width: 238px;
     border:2px solid #F2F2F2;
     border-left: none;
-    padding-left:15px;  
+    padding-left:24px;  
 }
 
 /*******************FILTRES****************/
+.section-filtre{
+    display: grid;
+    justify-content: center;
+    MARGIN: 3px 0 7px 37px;
+}
 .section-filtre ul{
     display: grid;
-    justify-content: start;
+    justify-content:center;
 
 }
 .section-filtre li{
@@ -101,7 +108,7 @@ body{
 }
 .section-filtre h2{
     font-size:16px;
-    margin-left:20px
+    margin-left:23px
 }
 .economie{
     border:3px solid #F2F2F2;
@@ -124,12 +131,12 @@ body{
 .familial{
     grid-column:2;
     border:3px solid #F2F2F2;
-    padding:10px 0px 5px 0px;
+    padding:11px 9px 3px 4px;
     font-size:16px;
     font-weight: bolder;
     width: 150px;
     border-radius: 40px;
-    margin:0PX 0px 3px 50px;
+    margin:0PX 59px -3px 33px;
 }
 .familial i{
     color:#0065FC;
@@ -141,5 +148,68 @@ body{
     padding-top: 15px;
     padding-left: 20px;
 }
+.heart{
+    border:3px solid #F2F2F2;
+    padding:11px 7px 5px 1px;
+    font-size:16px;
+    font-weight: bolder;
+    width: 170px;
+    border-radius: 40px;
+    margin-top: 20px;
+    padding-left:-10px;
+    margin: 20px 27px 2px -5px;
 }
+.heart i{
+    color:#0065FC;
+    background-color: #deebff;
+    width:40px;
+    height:40px;
+    border-radius: 45% 45%;
+    margin: -15px 12px -9PX -19px;
+    padding-top: 17px;
+    padding-left: 18px;
+
+}
+.dog{
+    grid-row: 3;
+    border:3px solid #F2F2F2;
+    padding:11px 1px 5px 7px;
+    font-size:16px;
+    font-weight: bolder;
+    width: 220px;
+    border-radius: 40px;
+    margin:30px -27px -19px -10px;
+}
+.dog i{
+    color:#0065FC;
+    background-color: #deebff;
+    width:40px;
+    height:40px;
+    border-radius: 45% 45%;
+    margin: -16px 22px -8PX -21px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+/***************LOGO INFORMATIONS ET TEXTE********/
+.logement{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 27px 11px 3px;
+    justify-content: center;
+    margin: 19px 19px 4px 18px;
+}
+.logement i{
+    padding: 0px -3px 0px 0px;
+    margin: 0px 13px 0px -17px;
+    font-size: 20px;
+    color: blue;
+}
+.logement h5{
+    font-size:15px;
+    font-weight:200;
+    width:300px;
+}
+}
+
 
