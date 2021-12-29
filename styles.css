@@ -43,8 +43,6 @@ justify-content: space-around;
      margin-bottom: 30px;
      margin-top:10px;
  }
-/********************BARRE DE RECHERCHE********************/
-
 /******************* BARRE DE RECHERCHE**************/
 .bar-search{
     display:flex;
@@ -74,12 +72,11 @@ justify-content: space-around;
     border-left: none;
     font-size: 16px;
     padding: 0.9em;
-
 }
 /*******************FILTRES****************/
 .section-filtre ul{
     display: grid;
-    justify-content: center;
+    justify-content:start;
     justify-items: start;
     padding: 0;
 }
@@ -91,6 +88,9 @@ justify-content: space-around;
 }
 .section-filtre h2{
     font-size:16px;
+}
+.section-filtre p{
+    padding-left:20px;
 }
 .section-filtre i{
     margin: -1px -7px -2px -5px;
@@ -128,7 +128,7 @@ justify-content: space-around;
     grid-row:3;
  padding-left:-20px;
 }
-/***************LOGO INFORMATIONS ET TEXTE********/
+/***************LOGO INFORMATIONS ET TEXTE*******************************/
 .logement{
     display: flex;
     align-items: baseline;
@@ -140,5 +140,296 @@ justify-content: space-around;
 .logement h5{
     font-size:16px;
     font-weight:200;
+    margin:10px;
+}
+/***************** SECTION LES PLUS POPULAIRES**************************/
+main{
+    margin-left: -20px;
+    margin-right:-20px;
+    margin-top: 30px;
+}
+main ul {
+    list-style: none;
+}
+/****************SECTION 1 **************************/
+.section1{
+    display:flex;
+    flex-direction: column-reverse;
+ }
+ .section1 h4{
+     font-size:14px;
+ }
+ .section1 p{
+     font-size:small;
+ }
+ .section1 ul{
+     display: flex;
+ }
+#house{
+    margin-left:30px;
+}
+.auberge-cannebiere{
+    border-radius: 15px 15PX 15px 15px;
+    background:white;
+    margin: 20px;
+    height: 200px;
+    box-shadow:1px 1px 11px 0px;
+}
+ .photo-cannebiere{
+     height: 120px;
+     object-fit: cover;
+     border-radius: 15px 15px 0 0;
+     width: 97%;
+     margin: 5px 0px 0px 5px;
+ }
+ .hebergement-marseille h4{
+    margin:4px 0px 0px 13px;
+ }
+ .hebergement-marseille p{
+    margin: 14px 0 9px 14px;
+    line-height: 0.4;
+ }
+ .hebergement-marseille ul{
+     color:#0065FC;
+ }
+ .auberge-cannebiere li:nth-of-type(5){
+    color:grey;
+     opacity:0.3;
+     font-size:14px;
+}
+ .icone4{
+    margin: 5px 0px 0 -27px;
+    font-size: small;
+ }
+ .hotel-port{
+    border-radius: 15px 15PX 15px 15px;
+    background:white;
+    margin: 20px;
+    height: 200px;
+    box-shadow:1px 1px 11px 0px;
+ }
+ .photo-port{
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    width: 97%;
+    margin: 5px 0px 0px 5px;
+ }
+ .hotel-mouette{
+    border-radius: 15px 15PX 15px 15px;
+    background:white;
+    margin: 20px;
+    height: 200px;
+    box-shadow:1px 1px 11px 0px;
+ }
+ .hotel-mouette li:nth-of-type(5){
+     color:grey;
+     opacity:0.3;
+     font-size:14px;
+ }
+ .photo-mouette{
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    width: 97%;
+    margin: 5px 0px 0px 5px;
+ }
+ .hotel-mer{
+    border-radius: 15px 15PX 15px 15px;
+    background:white;
+    margin: 20px;
+    height: 200px;
+    box-shadow:1px 1px 11px 0px;
+ }
+ .photo-mer{
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    width: 97%;
+    margin: 5px 0px 0px 5px;
+ }
+ .hotel-mer li:nth-of-child(4n+1){
+    color:grey;
+    opacity:0.3;
+    font-size:14px;
+ }
+ .hotel-panier{
+    border-radius: 15px 15PX 15px 15px;
+    background:white;
+    margin: 20px;
+    height: 200px;
+    box-shadow:1px 1px 11px 0px;
+ }
+ .photo-panier{
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    width: 97%;
+    margin: 5px 0px 0px 5px;
+ }
+ .hotel-panier li :nth-of-type(4){
+    color:grey;
+    opacity:0.3;
+    font-size:14px;
+ }
+ .hotel-amina{
+    border-radius: 15px 15PX 15px 15px;
+    background:white;
+    margin: 20px;
+    height: 200px;
+    box-shadow:1px 1px 11px 0px;
+ }
+ .photo-amina{
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    width: 97%;
+    margin: 5px 0px 0px 5px;
+ }
+ h5{
+    margin-left: 20px;
+    margin-top: 30px;
+ }
+ /*************** SECTION 2  ***************************/
+.section2{
+    background-color: #F2F2F2;
+}
+.section2 p {
+    font-size:13px;
+}
+.section-cote{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    padding-left :20px;
+}
+.section-filtre h3{
+    padding-left: 20px;
+}
+.section-cote i{
+    padding-right:20px;
+    font-size:20px;
+    margin-left:20px;
+}
+.hotel-lesoleil{
+    display: flex;
+    border-radius: 15px 15PX 15px 15px;
+    background: white;
+    margin: 20px;
+    height: 140px;
+}
+.photo-lesoleil{
+    height: 130px;
+    width: 120px;
+    border-radius: 15px 0 0 15px;
+    margin: 5px 12px 0px 5px;
+    object-fit: cover;
+}
+.icone1 , .icone2 , .icone3{
+    display: flex;
+    color:#0065FC;
+    margin-left: -42px;
+    padding-top: 10px;  
+}
+.icone1{
+    padding-top:26px;
+}
+.icone2{
+    padding-top: 26px;
+    margin-left:-40px;
+}
+.icone3{
+ padding-top: 19px;
+}
+.hotel-coeur li:nth-of-type(5){
+    color: #F2F2F2;
+}
+.le-soleil{
+   margin: -7px 0px 0px 8px;
+}
+.le-soleil p{
+    margin-top: -10px;
+    font-size:14px;
+}
+.hotel-coeur{
+    display: flex;
+    border-radius: 15px 15PX 15px 15px;
+    background: white;
+    margin: 20px;
+    height: 140px;
+}
+.hotel-coeur h4{
+    margin: 9px 0 0 4px;
+}
+.hotel-coeur {
+    margin-top:-10px;
+}
+.photo-coeur{
+    height: 130px;
+    width: 120px;
+    border-radius: 15px 0 0 15px;
+    margin: 5px 12px 0px 5px;
+    object-fit: cover;
+}
+.hotel-bleu{
+    display: flex;
+    border-radius: 15px 15PX 15px 15px;
+    background: white;
+    margin: 20px;
+    height: 140px;
+}
+.photo-bleu{
+    height: 130px;
+    width: 120px;
+    border-radius: 15px 0 0 15px;
+    margin: 5px 16px 0px 5px;
+    object-fit: cover;
+}
+.hotel-bleu li:nth-of-type(5){
+    color: #F2F2F2;
+}
+.hotel-bleu p{
+    margin-top:-10px;
+}
+/********************SECTION ACTIVITES A MARSEILLE**********************/
+.activite-marseille h4{
+margin-left:20px;
+}
+.activite-marseille h5{
+    margin:19px;
+    font-size:smaller;
+}
+.activite-marseille img{
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    width:100%;
+}
+.vieux-port , .pomegue , .frioul,.calanques,.notre-dame, .longchamp {
+    border-radius: 15px 15PX 15px 15px;
+    background: white;
+    height: 180px;
+    box-shadow: 3px 3px 15px -3px;
+    margin-top:20px;
+}
+#activity{
+    font-size :18px;
+}
+/*********************** FOOTER *****************************/
+footer{
+    background-color: red;
+    MARGIN: 0px -23px -17px -17px;
+    line-height: 1.7;
+}
+.footer p{
+    padding-top:40px;
+    font-weight:bolder;
+}
+footer ul{
+    list-style-type: none;
+   
+}
+footer li{
+    font-weight: none;
 }
 }
