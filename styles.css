@@ -1,9 +1,14 @@
 @media screen and (max-width: 768px){
 body{
     font-family: 'Raleway', sans-serif;
-    margin: 15Px;
     box-sizing: border-box;
  }
+ header{
+     margin-left:29px;
+ }
+.navbar{
+    display: block;
+}
  .navbar ul{ 
     display: flex;
    justify-content: space-between;
@@ -19,7 +24,7 @@ justify-content: space-around;
      list-style-type: none; 
  }
  .navbar-hebergement{
-     margin:0px -1px 0 -30px;
+     margin-left:-52px;
  }
  .navbar-activity{
      margin:0px 62px 0px 0px;
@@ -30,22 +35,25 @@ justify-content: space-around;
      cursor:pointer;
      font-size:14px;
  }
- .navbar a:hover{
-     border-bottom:3px solid#0065FC;
+ .navbar #house{
+     border-bottom:2px solid red,
  }
  .section0{
   width: 330PX;
   font-size:19px;
   line-height: 1.2;
+  margin: 15px;
  }
  .section0 p{
      font-size: 14px;
      margin-bottom: 30px;
      margin-top:10px;
  }
+
 /******************* BARRE DE RECHERCHE**************/
 .bar-search{
     display:flex;
+    margin: 15px;
 }
 .loupe{
     background: #F2F2F2;
@@ -76,8 +84,7 @@ justify-content: space-around;
 /*******************FILTRES****************/
 .section-filtre ul{
     display: grid;
-    justify-content:start;
-    justify-items: start;
+    justify-content:center;
     padding: 0;
 }
 .section-filtre li{
@@ -88,6 +95,7 @@ justify-content: space-around;
 }
 .section-filtre h2{
     font-size:16px;
+    padding-left:15px;
 }
 .section-filtre p{
     padding-left:20px;
@@ -135,12 +143,11 @@ justify-content: space-around;
 }
 .logement i{
     color: blue;
-
+    margin: 15px;
 }
-.logement h5{
+.logement p{
     font-size:16px;
     font-weight:200;
-    margin:10px;
 }
 /***************** SECTION LES PLUS POPULAIRES**************************/
 main{
@@ -294,6 +301,9 @@ main ul {
 .section2{
     background-color: #F2F2F2;
 }
+.section2 h3{
+    margin-left:15px;
+}
 .section2 p {
     font-size:13px;
 }
@@ -309,7 +319,7 @@ main ul {
 .section-cote i{
     padding-right:20px;
     font-size:20px;
-    margin-left:20px;
+    margin-right:20px;
 }
 .hotel-lesoleil{
     display: flex;
@@ -417,19 +427,72 @@ margin-left:20px;
 }
 /*********************** FOOTER *****************************/
 footer{
-    background-color: red;
-    MARGIN: 0px -23px -17px -17px;
-    line-height: 1.7;
+    background-color:#F2F2F2;
+    margin: 0px -23px -17px -17px;
+    line-height: 1.5;
+    padding-bottom: 10px;
 }
 .footer p{
     padding-top:40px;
     font-weight:bolder;
 }
 footer ul{
-    list-style-type: none;
-   
+    list-style-type: none;  
 }
 footer li{
     font-weight: none;
+}
+}
+/** partie ordinateur */
+@media screen and (min-width:768px){
+ body{
+      font-family: 'Raleway', sans-serif;
+        box-sizing: border-box;
+     }
+.navbar img{
+        height: 30px;
+}
+.navbar{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-right:20px;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    margin-left: 14px 20px 0px 0px;
+}
+.navbar li{
+    padding-top: 25px;
+    font-size: 12px;
+    margin-top: -24px;
+    padding-left: 30px;
+}
+.navbar a{
+ text-decoration: none;
+ color:black;
+}
+.navbar a:hover{
+    border-top: 3px solid #0065FC;
+    padding-top: 22px;
+}
+.bouton1{  
+    border-radius: 0 20% 20% 0;
+    color: white;
+    background-color: #0065FC;
+    border: 0 solid transparent;
+    margin-left: -6px;
+    padding: 18px;
+}
+.bouton2{
+    display:none;
+}
+.search{
+    font-weight: bolder;
+    border: 2px solid #F2F2F2;
+    border-left: none;
+    font-size: 16px;
+    padding: 0.9em;
 }
 }
