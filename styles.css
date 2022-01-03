@@ -49,7 +49,6 @@ justify-content: space-around;
      margin-bottom: 30px;
      margin-top:10px;
  }
-
 /******************* BARRE DE RECHERCHE**************/
 .bar-search{
     display:flex;
@@ -82,9 +81,14 @@ justify-content: space-around;
     padding: 0.9em;
 }
 /*******************FILTRES****************/
+.section-filtre{
+    display:flex;
+    flex-direction: column;
+}
 .section-filtre ul{
     display: grid;
-    justify-content:center;
+    justify-content: center;
+    align-items: center;
     padding: 0;
 }
 .section-filtre li{
@@ -129,12 +133,15 @@ justify-content: space-around;
 }
 .filtre-heart{
     margin-left: -4px;
-    padding-left: 14px;
+    padding-left: 25px;
 }
 .dog{
     margin-top:15px;
     grid-row:3;
  padding-left:-20px;
+}
+.filtre-dog{
+    padding-left:17px;
 }
 /***************LOGO INFORMATIONS ET TEXTE*******************************/
 .logement{
@@ -171,6 +178,9 @@ main ul {
  }
  .section1 ul{
      display: flex;
+ }
+ .hotel-haut{
+     display: block;
  }
 #house{
     margin-left:30px;
@@ -444,11 +454,14 @@ footer li{
 }
 }
 /** partie ordinateur */
-@media screen and (min-width:768px){
+@media screen and (min-width:769px){
  body{
       font-family: 'Raleway', sans-serif;
         box-sizing: border-box;
      }
+header{
+    margin-left: 20px;
+}
 .navbar img{
         height: 30px;
 }
@@ -477,8 +490,18 @@ margin-right:20px;
     border-top: 3px solid #0065FC;
     padding-top: 22px;
 }
+under-logo p{
+    font-size:13px;
+}
+.section0{
+    margin-left: 20px;
+}
+/*BOUTON DE RECHERCHE*/
+.bar-search{
+    margin-left: 20px;
+}
 .bouton1{  
-    border-radius: 0 20% 20% 0;
+    border-radius: 0 14px 14px 0;
     color: white;
     background-color: #0065FC;
     border: 0 solid transparent;
@@ -493,6 +516,191 @@ margin-right:20px;
     border: 2px solid #F2F2F2;
     border-left: none;
     font-size: 16px;
-    padding: 0.9em;
+    padding: 14px;
+    margin-left: -8px;
 }
+.loupe{
+    background: #F2F2F2;
+    border-radius: 10px 0 0 10px;
+    padding: 18px;
+}
+/*PARTIE filtre*/
+.section-filtre{
+    display:flex;
+    align-items: center;
+    margin-top:20px;
+    margin-left: 20px;
+}
+.section-filtre ul{
+    display:grid;
+    align-items: center;
+    list-style-type: none;
+    grid-gap: 21px;
+    margin-left: -30px;
+}
+.economie{
+    grid-area:1/1/2/2;
+    padding-right: 16px;
+}
+.filtre-economique{
+    padding-left: 12px;
+}
+.familial{
+    grid-area:1/2/2/3;
+}
+.filtre-familial{
+    padding-left: 10px;
+}
+.heart{
+    grid-area:1/3/2/4;
+}
+.filtre-heart{
+    padding-left: 16px;
+}
+.dog{
+    grid-area: 1/4/1/5;
+}
+.filtre-dog{
+    padding-left: 16px;
+}
+.section-filtre i{
+    margin: -1px -7px -2px -5px;
+    padding: 1rem;
+    border-radius: 50%;
+    background:#DEEBFF;
+    color:#0065FC;
+}
+.section-filtre li{
+    border: 2px solid #F2F2F2;
+    border-radius: 1.4rem;
+    font-weight: bolder;
+    padding-right: 16px;
+}
+.section-filtre h2{
+    font-size: 17px;
+}
+.logement{
+    display: flex;
+    align-items: baseline;
+}
+.logement p{
+    padding-left:20px;
+}
+.logement i{
+    color:#0065FC;
+    margin-left: 15px;
+}
+/* PARTIE HEBERGEMENT A MARSEILLE*/
+.hebergement-marseille{
+    background-color: #f2F2F2;
+    border-radius: 20px 20px;
+    margin-left: 20px;
+}
+.hebergement-marseille h3{
+    padding-top: 30px;
+    font-size:16px;
+    margin-left: 20px;
+}
+.hotel-haut{
+    display: flex;
+}
+.auberge-cannebiere{
+    border-radius: 15px 15PX 15px 15px;
+    background:white;
+    margin: 20px;
+    height: 200px;
+    box-shadow:1px 1px 11px 0px;
+}
+ .photo-cannebiere{
+     height: 120px;
+     object-fit: cover;
+     border-radius: 15px 15px 0 0;
+     width: 97%;
+     margin: 5px 0px 0px 5px;
+ }
+ .hotel-port{
+    border-radius: 15px 15PX 15px 15px;
+    background:white;
+    margin: 20px;
+    height: 200px;
+    box-shadow:1px 1px 11px 0px;
+ }
+ .photo-port{
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    width: 97%;
+    margin: 5px 0px 0px 5px;
+ }
+ .hotel-mouette{
+    border-radius: 15px 15PX 15px 15px;
+    background:white;
+    margin: 20px;
+    height: 200px;
+    box-shadow:1px 1px 11px 0px;
+ }
+ .hotel-mouette li:nth-of-type(5){
+     color:grey;
+     opacity:0.3;
+     font-size:14px;
+ }
+ .photo-mouette{
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    width: 97%;
+    margin: 5px 0px 0px 5px;
+ }
+ .hotel-mer{
+    border-radius: 15px 15PX 15px 15px;
+    background:white;
+    margin: 20px;
+    height: 200px;
+    box-shadow:1px 1px 11px 0px;
+ }
+ .photo-mer{
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    width: 97%;
+    margin: 5px 0px 0px 5px;
+ }
+ .hotel-mer li:nth-of-child(4n+1){
+    color:grey;
+    opacity:0.3;
+    font-size:14px;
+ }
+ .hotel-panier{
+    border-radius: 15px 15PX 15px 15px;
+    background:white;
+    margin: 20px;
+    height: 200px;
+    box-shadow:1px 1px 11px 0px;
+ }
+ .photo-panier{
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    width: 97%;
+    margin: 5px 0px 0px 5px;
+ }
+ .hotel-panier li :nth-of-type(4){
+    color:grey;
+    opacity:0.3;
+    font-size:14px;
+ } 
+ .hotel-amina{
+    border-radius: 15px 15PX 15px 15px;
+    background:white;
+    margin: 20px;
+    height: 200px;
+    box-shadow:1px 1px 11px 0px;
+ }
+ .photo-amina{
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    width: 97%;
+    margin: 5px 0px 0px 5px;
+ }
 }
