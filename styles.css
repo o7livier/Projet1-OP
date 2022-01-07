@@ -118,6 +118,7 @@ justify-content: space-around;
     padding-left: 6px;
     margin-left: 8px; 
 }
+
 .familial{
     grid-column: 2;
     margin-left: 20px;
@@ -166,6 +167,7 @@ main ul {
     list-style: none;
 }
 /****************SECTION 1 **************************/
+
 .section1{
     display:flex;
     flex-direction: column-reverse;
@@ -450,23 +452,521 @@ footer li{
     font-weight: none;
 }
 }
-/************PARTIE ORDINATEUR *********/
-@media screen and (min-width:769px){
- body{
-      font-family: 'Raleway', sans-serif;
+/************PARTIE TABLETTE*********/
+@media screen and (min-width: 768px){
+    body{
+        font-family: 'Raleway', sans-serif;
         box-sizing: border-box;
      }
-header{
+    header{
+        margin-left: 20px;
+    }
+    .navbar img{
+        height: 30px;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right:20px;
+    }
+    .navbar ul{
+        display: flex;
+        list-style-type: none;
+        margin-left: 14px 20px 0px 0px;
+    }
+    .navbar li{
+        padding-top: 25px;
+        font-size: 12px;
+        margin-top: -24px;
+        padding-left: 45px;
+    }
+    .navbar a{
+        text-decoration: none;
+        color:black;
+    }
+    .navbar a:hover{
+        border-top: 3px solid #0065FC;
+        padding-top: 22px;
+    }
+    .under-logo p{
+        font-size:11px;
+    }
+    .section0{
+        margin-left: 20px;
+    }
+    .under-logo h3{
+        font-size:smaller;
+
+    }
+    /*BOUTON DE RECHERCHE*/
+    .bar-search{
+        margin-left: 20px;
+    }
+    .bouton1{  
+        border-radius: 0 10px 10px 0;
+        color: white;
+        background-color: #0065FC;
+        border: 0 solid transparent;
+        margin-left: -6px;
+        padding: 7px;
+
+    }
+    .bouton2{
+        display:none;
+    }
+    .search{
+        font-weight: bolder;
+        border: 2px solid #F2F2F2;
+        border-left: none;
+        font-size: 11px;
+        padding: 0.45REm;
+        padding-top: 8px;
+        margin-left: -6px;
+        padding-bottom: 5px;
+    }
+    .loupe{
+        background: #F2F2F2;
+        border-radius: 10px 0 0 10px;
+        padding: 7px;
+            }
+    /*PARTIE filtre*/
+    .section-filtre li:hover{
+        color:#2588cf;
+       cursor: pointer;
+    }
+    .section-filtre{
+        display:flex;
+        align-items: center;
+        margin-top:10px;
+        margin-left: 20px;
+    }
+    .section-filtre ul{
+        display:grid;
+        align-items: center;
+        list-style-type: none;
+        grid-gap: 21px;
+        margin-left: -30px;
+    }
+    .economie{
+        grid-area:1/1/2/2;
+        padding-right: 16px;
+    }
+    .filtre-economique{
+        padding-left: 12px;
+    }
+    .familial{
+        grid-area:1/2/2/3;
+    }
+    .filtre-familial{
+        padding-left: 10px;
+    }
+    .heart{
+        grid-area:1/3/2/4;
+    }
+    .filtre-heart{
+        padding-left: 16px;
+    }
+    .dog{
+        grid-area: 1/4/1/5;
+    }
+    .filtre-dog{
+        padding-left: 16px;
+    }
+    .section-filtre i{
+        margin: -1px -7px -2px -5px;
+        padding: 10px;
+        border-radius: 50%;
+        background:#DEEBFF;
+        color:#0065FC;
+        font-size: 10px;
+    }
+    .section-filtre li{
+        border: 2px solid #F2F2F2;
+        border-radius: 1.4rem;
+        font-weight: bolder;
+        padding-right: 16px;
+        font-size: 10px;
+    }
+    .section-filtre h2{
+        font-size: 10px;
+    }
+    .logement{
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 20px;
+    }
+    .logement p{
+        padding-left:20px;
+        font-size:13px;
+    }
+    .logement i{
+        color:#0065FC;
+        margin-left: 15px;
+    }
+    /* PARTIE HEBERGEMENT A MARSEILLE*/
+    .section1{
+        display:block;
+    }
+    .hebergement-marseille{
+        background-color: #f2F2F2;
+        border-radius: 20px 20px;
+        margin-left: 17px;
+       width: 791px;
+    }
+    .hebergement-marseille h3{
+        margin-top: 35px;
+        margin-left: 25px;
+     }
+    .hebergement-marseille h4{
+        padding-top: 8px;
+        font-size: 11px;
+        margin-left: 10px;
+        margin-top: -6px;
+    }
+    .hebergement-marseille h5{
+        padding-left:30px;
+    }
+    .hebergement-marseille p{
+        font-size: 10px;
+        margin-left: 10px;
+        margin-top: -14px;
+    }
+    .hebergement-marseille ul{
+        list-style-type: none;
+        display: flex;
+        color: #0065FC;
+        margin-left: -31px;
+        margin-top: -9px;
+    }
+    .section1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .icone1 , .icone2 ,.icone3,.icone4{
+        font-size:small;
+    }
+    .hotel-haut{
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    }
+    .hotel-haut h4{
+        padding-top:10px;
+    }
+    .auberge-cannebiere{
+        border-radius: 15px 15PX 15px 15px;
+        background:white;
+        height: 175px;
+        width: 200px;
+        box-shadow:1px 1px 11px 0px;
+        grid-area: 1/1/2/2;
+        margin: 20px;
+    }
+    .photo-cannebiere{
+        height: 120px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+        width: 97%;
+        margin:-4px 1px -23px 3px
+    }
+    .auberge-cannebiere li:nth-of-type(5){
+        color:grey;
+        opacity:0.3;
+    }
+    .auberge-cannebiere h4{
+        margin-top: 18px;
+    }
+    .auberge-cannebiere{
+        padding-top: 8px;
+    }
+    .hotel-port{
+        border-radius: 15px 15PX 15px 15px;
+        background:white;
+        margin: 20px;
+        height: 175px;
+        width: 200px;
+        box-shadow:1px 1px 11px 0px;
+        grid-area: 1/2/2/3;
+    }
+    .photo-port{
+        height: 120px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+        width: 97%;
+        margin:4px 0px 0px 3px;
+    }
+    .hotel-mouette{
+        border-radius: 15px 15PX 15px 15px;
+        background:white;
+        margin: 20px;
+        height: 175px;
+        width: 200px;
+        box-shadow:1px 1px 11px 0px;
+        grid-area: 1/3/2/4;
+    }
+    .hotel-mouette li:nth-of-type(5){
+        color:grey;
+        opacity:0.3;
+    }
+    .photo-mouette{
+        height: 120px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+        width: 97%;
+        margin:4px 0px 0px 3px;
+    }
+    .hotel-mer{
+        border-radius: 15px 15PX 15px 15px;
+        background:white;
+        margin: 20px;
+        height: 175px;
+        width: 200px;
+        box-shadow:1px 1px 11px 0px;
+    }
+    .photo-mer{
+        height: 120px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+        width: 97%;
+        margin:4px 0px 0px 3px;
+    }
+    .hotel-mer li:nth-of-type(1n+4){
+        color:grey;
+        opacity:0.3;
+    }
+     .hotel-panier{
+        border-radius: 15px 15PX 15px 15px;
+        background:white;
+        margin: 20px;
+        height: 175px;
+        width: 200px;
+        box-shadow:1px 1px 11px 0px;
+    }
+    .photo-panier{
+        height: 120px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+        width: 97%;
+        margin:4px 0px 0px 3px;
+     }
+    .hotel-panier li:nth-of-type(5){
+        color:grey;
+        opacity:0.3;
+    } 
+    .hotel-amina{
+        border-radius: 15px 15PX 15px 15px;
+        background:white;
+        margin: 20px;
+        height: 175px;
+        width: 200px;
+        box-shadow:1px 1px 11px 0px;
+    }
+    .photo-amina{
+        height: 120px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+        width: 97%;
+        margin:4px 0px 0px 3px;
+    }
+    /*partie les plus populaires*/
+    .section-cote{
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        padding-top:16px;
+    }
+    .section2{
+        background: #F2F2F2;
+        border-radius: 15px 15px;
+        margin-left: 30px;
+    }
+    .hotel-lesoleil{
+        display: flex;
+        border-radius: 15px;
+        background: white;
+        margin: 20px;
+        height: 110px;
+        width: 280px;
+        margin-top: 35PX;
+    }
+    .section2 h4{
+        font-size:13px;
+    }
+    .section2 p{
+        font-size:9px;
+    }
+    .photo-lesoleil{
+        height: 100px;
+        width: 105px;
+        border-radius: 15px 0px 0px 15px;
+        margin: 5px 12px 0px 5px;
+        object-fit: cover;
+    }
+    .hotel-coeur{
+        display: flex;
+        border-radius: 15px;
+        background:white;
+        margin: 20px;
+        height: 110px;
+        width: 280px;
+        margin-top: 35PX;
+    }
+    .photo-coeur{
+        height: 100px;
+        width: 105px;
+        border-radius: 15px 0px 0px 15px;
+        margin: 5px 12px 0px 5px;
+        object-fit: cover;
+    }
+    .hotel-bleu{
+        display: flex;
+        border-radius: 15px;
+        background:white;
+        margin: 20px;
+        height: 110px;
+        width: 280px;
+        margin-top: 35PX;
+    }
+    .photo-bleu{
+        height: 100px;
+        width: 105px;
+        border-radius: 15px 0px 0px 15px;
+        margin: 5px 12px 0px 5px;
+        object-fit: cover;
+    }
+    .hotel-bleu li:nth-of-type(5),.hotel-coeur li:nth-of-type(5){
+        color: gray;
+        opacity:0.6;
+    }
+    .icone1 , .icone2,.icone3{
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: -40px;
+        color:#0065FC;
+    }
+    /*** PARTIE ACTIVITEE A MARSEILLE*/
+    .activite-marseille{
+        margin-left: 20px;
+    }
+    .activite-marseille h5{
+         padding-left: 10px;
+        margin-top: 10px;
+    }
+    .marseille-photo{
+        display: flex;
+    }
+    .vieux-port{
+        height:350px;
+        background-color: white;
+        border-radius:15px 15px;
+        margin-right: 35px;
+        box-shadow:1px 1px 11px 0px;
+    }
+    .photo-vieuxport{
+        width:250px;
+        height:310px;
+        border-radius:15px 15px 0 0;
+        object-fit: cover;
+    }
+    .pomegue{
+        height:166px;
+        background-color: white;
+        border-radius:15px 15px;
+        box-shadow:1px 1px 11px 0px;
+    }
+    .photo-pomegue{
+        width:250px;
+        height:110px;
+        border-radius:15px 15px 0 0;
+        object-fit: cover;
+    }
+    .frioul{
+        height:140px;
+        background-color: white;
+        border-radius:15px 15px;
+        margin-top:42px;
+         box-shadow:1px 1px 11px 0px;
+    }
+    .photo-frioul{
+        width: 250px;
+        height: 89px;
+        border-radius:15px 15px 0 0;
+        object-fit: cover;
+    }
+    .calanques{
+        height:350px;
+        background-color: white;
+        border-radius:15px 15px;
+        margin-right:35px;
+        margin-left:35px;
+        box-shadow:1px 1px 11px 0px;
+    }
+    .photo-calanques{
+        width:250px;
+        height:310px;
+        border-radius:15px 15px 0 0;
+        object-fit: cover;
+    }
+    .notre-dame{
+        height:166px;
+        background-color: white;
+        border-radius:15px 15px;
+        box-shadow:1px 1px 11px 0px;
+    }
+    .photo-notredame{
+        width:250px;
+        height:110px;
+        border-radius:15px 15px 0 0;
+        object-fit: cover;
+             }
+    .longchamp{
+        height:140px;
+        background-color: white;
+        border-radius:15px 15px;
+        margin-top:42px;
+        box-shadow:1px 1px 11px 0px;
+    }
+    .photo-longchamp{
+        width: 250px;
+        height: 89px;
+        border-radius:15px 15px 0 0;
+        object-fit: cover;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color:#F2F2F2;
+        margin: 30px -17px -19px -15px
+    }
+    footer ul{
+        list-style-type: none;
+        line-height:1.6;
+    }
+    footer p{
+        font-weight: bolder;
+    }
+    footer li{
+        font-size:13px;
+}
+/* PARTIE ORDINATEUR*/
+@media screen and (min-width:992px){
+ body{
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+ }
+ header{
     margin-left: 20px;
 }
 .navbar img{
-        height: 30px;
+    height: 30px;
 }
 .navbar{
-display: flex;
-align-items: center;
-justify-content: space-between;
-margin-right:20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right:20px;
 }
 .navbar ul{
     display: flex;
@@ -480,14 +980,14 @@ margin-right:20px;
     padding-left: 45px;
 }
 .navbar a{
- text-decoration: none;
- color:black;
+    text-decoration: none;
+    color:black;
 }
 .navbar a:hover{
     border-top: 3px solid #0065FC;
     padding-top: 22px;
 }
-under-logo p{
+.under-logo p{
     font-size:13px;
 }
 .section0{
@@ -520,8 +1020,12 @@ under-logo p{
     background: #F2F2F2;
     border-radius: 10px 0 0 10px;
     padding: 18px;
-}
+        }
 /*PARTIE filtre*/
+.section-filtre li:hover{
+    color:#2588cf;
+   cursor: pointer;
+}
 .section-filtre{
     display:flex;
     align-items: center;
@@ -566,12 +1070,14 @@ under-logo p{
     border-radius: 50%;
     background:#DEEBFF;
     color:#0065FC;
+    font-size:17px
 }
 .section-filtre li{
     border: 2px solid #F2F2F2;
     border-radius: 1.4rem;
     font-weight: bolder;
     padding-right: 16px;
+    font-size:17px
 }
 .section-filtre h2{
     font-size: 17px;
@@ -598,10 +1104,10 @@ under-logo p{
 .hebergement-marseille h3{
     margin-top: 35px;
     margin-left: 25px;
-}
+ }
 .hebergement-marseille h4{
-    padding-top: 32px;
-    font-size: 14px;
+    padding-top: 8px;
+    font-size: 11px;
     margin-left: 10px;
     margin-top: -6px;
 }
@@ -609,20 +1115,23 @@ under-logo p{
     padding-left:30px;
 }
 .hebergement-marseille p{
-    font-size: 11px;
+    font-size: 10px;
     margin-left: 10px;
-    margin-top: -16px;
+    margin-top: -14px;
 }
 .hebergement-marseille ul{
     list-style-type: none;
     display: flex;
     color: #0065FC;
     margin-left: -31px;
-    margin-top: -3px;
+    margin-top: -9px;
 }
 .section1{
     display: flex;
     justify-content: space-between;
+}
+.icone1 , .icone2 ,.icone3,.icone4{
+    font-size:small;
 }
 .hotel-haut{
     display: grid;
@@ -635,7 +1144,8 @@ under-logo p{
 .auberge-cannebiere{
     border-radius: 15px 15PX 15px 15px;
     background:white;
-    height: 200px;
+    height: 175px;
+    width: 200px;
     box-shadow:1px 1px 11px 0px;
     grid-area: 1/1/2/2;
     margin: 20px;
@@ -645,101 +1155,109 @@ under-logo p{
     object-fit: cover;
     border-radius: 15px 15px 0 0;
     width: 97%;
-    margin: 5px 1px -23px 3px
- }
- .auberge-cannebiere li:nth-of-type(5){
+    margin:-4px 1px -23px 3px
+}
+.auberge-cannebiere li:nth-of-type(5){
     color:grey;
-     opacity:0.3;
+    opacity:0.3;
 }
 .auberge-cannebiere h4{
     margin-top: 18px;
 }
- .hotel-port{
+.auberge-cannebiere{
+    padding-top: 8px;
+}
+.hotel-port{
     border-radius: 15px 15PX 15px 15px;
     background:white;
     margin: 20px;
-    height: 200px;
+    height: 175px;
+    width: 200px;
     box-shadow:1px 1px 11px 0px;
     grid-area: 1/2/2/3;
- }
- .photo-port{
+}
+.photo-port{
     height: 120px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
     width: 97%;
     margin:4px 0px 0px 3px;
- }
- .hotel-mouette{
+}
+.hotel-mouette{
     border-radius: 15px 15PX 15px 15px;
     background:white;
     margin: 20px;
-    height: 200px;
+    height: 175px;
+    width: 200px;
     box-shadow:1px 1px 11px 0px;
     grid-area: 1/3/2/4;
- }
- .hotel-mouette li:nth-of-type(5){
-     color:grey;
-     opacity:0.3;
- }
- .photo-mouette{
+}
+.hotel-mouette li:nth-of-type(5){
+    color:grey;
+    opacity:0.3;
+}
+.photo-mouette{
     height: 120px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
     width: 97%;
     margin:4px 0px 0px 3px;
- }
- .hotel-mer{
+}
+.hotel-mer{
     border-radius: 15px 15PX 15px 15px;
     background:white;
     margin: 20px;
-    height: 200px;
+    height: 175px;
+    width: 200px;
     box-shadow:1px 1px 11px 0px;
- }
- .photo-mer{
+}
+.photo-mer{
     height: 120px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
     width: 97%;
     margin:4px 0px 0px 3px;
- }
- .hotel-mer li:nth-of-type(1n+4){
+}
+.hotel-mer li:nth-of-type(1n+4){
     color:grey;
     opacity:0.3;
- }
+}
  .hotel-panier{
     border-radius: 15px 15PX 15px 15px;
     background:white;
     margin: 20px;
-    height: 200px;
+    height: 175px;
+    width: 200px;
     box-shadow:1px 1px 11px 0px;
- }
- .photo-panier{
+}
+.photo-panier{
     height: 120px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
     width: 97%;
     margin:4px 0px 0px 3px;
  }
- .hotel-panier li:nth-of-type(5){
+.hotel-panier li:nth-of-type(5){
     color:grey;
     opacity:0.3;
- } 
- .hotel-amina{
+} 
+.hotel-amina{
     border-radius: 15px 15PX 15px 15px;
     background:white;
     margin: 20px;
-    height: 200px;
+    height: 175px;
+    width: 200px;
     box-shadow:1px 1px 11px 0px;
- }
- .photo-amina{
+}
+.photo-amina{
     height: 120px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
     width: 97%;
     margin:4px 0px 0px 3px;
- }
- /*partie les plus populaires*/
- .section-cote{
+}
+/*partie les plus populaires*/
+.section-cote{
     display: flex;
     justify-content: space-around;
     align-items:center;
@@ -750,7 +1268,7 @@ under-logo p{
     border-radius: 15px 15px;
     margin-left: 30px;
 }
- .hotel-lesoleil{
+.hotel-lesoleil{
     display: flex;
     border-radius: 15px;
     background: white;
@@ -820,11 +1338,11 @@ under-logo p{
     margin-left: 20px;
 }
 .activite-marseille h5{
-    padding-left: 10px;
+     padding-left: 10px;
     margin-top: 10px;
 }
 .marseille-photo{
-display: flex;
+    display: flex;
 }
 .vieux-port{
     height:350px;
@@ -834,8 +1352,8 @@ display: flex;
     box-shadow:1px 1px 11px 0px;
 }
 .photo-vieuxport{
-   width:250px;
-   height:310px;
+    width:250px;
+    height:310px;
     border-radius:15px 15px 0 0;
     object-fit: cover;
 }
@@ -846,8 +1364,8 @@ display: flex;
     box-shadow:1px 1px 11px 0px;
 }
 .photo-pomegue{
-   width:250px;
-   height:110px;
+    width:250px;
+    height:110px;
     border-radius:15px 15px 0 0;
     object-fit: cover;
 }
@@ -856,7 +1374,7 @@ display: flex;
     background-color: white;
     border-radius:15px 15px;
     margin-top:42px;
-    box-shadow:1px 1px 11px 0px;
+     box-shadow:1px 1px 11px 0px;
 }
 .photo-frioul{
     width: 250px;
@@ -875,22 +1393,22 @@ display: flex;
 .photo-calanques{
     width:250px;
     height:310px;
-     border-radius:15px 15px 0 0;
-     object-fit: cover;
+    border-radius:15px 15px 0 0;
+    object-fit: cover;
 }
 .notre-dame{
     height:166px;
-   background-color: white;
+    background-color: white;
     border-radius:15px 15px;
     box-shadow:1px 1px 11px 0px;
 }
 .photo-notredame{
     width:250px;
     height:110px;
-     border-radius:15px 15px 0 0;
-     object-fit: cover;
- }
- .longchamp{
+    border-radius:15px 15px 0 0;
+    object-fit: cover;
+         }
+.longchamp{
     height:140px;
     background-color: white;
     border-radius:15px 15px;
@@ -902,14 +1420,14 @@ display: flex;
     height: 89px;
     border-radius:15px 15px 0 0;
     object-fit: cover;
- }
+}
 footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color:#F2F2F2;
-   margin: 30px -17px -19px -15px
+    margin: 30px -17px -19px -15px
 }
-.footer ul{
+footer ul{
     list-style-type: none;
     line-height:1.6;
 }
