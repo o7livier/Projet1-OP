@@ -35,8 +35,9 @@ justify-content: space-around;
      cursor:pointer;
      font-size:14px;
  }
- .navbar a:hover{
+ nav a:hover{
      border-bottom:3px solid #0065FC;
+     
  }
  .section0{
   width: 330PX;
@@ -139,7 +140,7 @@ justify-content: space-around;
 .dog{
     margin-top:15px;
     grid-row:3;
- padding-left:-20px;
+   padding-left:-20px;
 }
 .filtre-dog{
     padding-left:17px;
@@ -440,18 +441,16 @@ footer{
     line-height: 1.5;
     padding-bottom: 10px;
 }
-.footer p{
+footer h6{
     padding-top:40px;
     font-weight:bolder;
+    font-size: 13px;
 }
 footer ul{
     list-style-type: none;  
 }
-footer li{
-    font-weight: none;
 }
-}
-/************* PARTIE tablette*/
+/************* PARTIE tablette*********/
 @media screen and (min-width:768px)and (max-width:992px){
  body{
     font-family: 'Raleway', sans-serif;
@@ -472,7 +471,7 @@ footer li{
 .navbar ul{
     display: flex;
     list-style-type: none;
-    margin-left: 14px 20px 0px 0px;
+    margin-left: 14px ;
 }
 .navbar li{
     padding-top: 25px;
@@ -596,7 +595,7 @@ footer li{
     align-items: baseline;
     margin-bottom: 20px;
 }
-.logement p{
+.logement h3{
     padding-left:20px;
 }
 .logement i{
@@ -955,14 +954,15 @@ footer ul{
     list-style-type: none;
     line-height:1.6;
 }
-footer p{
+footer h6{
     font-weight: bolder;
+    font-size: 13px;
 }
 footer li{
     font-size:13px;
 }
 }
-/*********************partie*****************/
+/*********************partie ordinateur*****************/
 @media screen and (min-width:992px){
     body{
        font-family: 'Raleway', sans-serif;
@@ -983,7 +983,7 @@ footer li{
    .navbar ul{
        display: flex;
        list-style-type: none;
-       margin-left: 14px 20px 0px 0px;
+       margin-left: 14px;
    }
    .navbar li{
        padding-top: 25px;
@@ -1099,7 +1099,7 @@ footer li{
        align-items: baseline;
        margin-bottom: 20px;
    }
-   .logement p{
+   .logement h6{
        padding-left:20px;
    }
    .logement i{
@@ -1278,7 +1278,7 @@ footer li{
    .section2{
        background: #F2F2F2;
        border-radius: 15px 15px;
-       margin-left: 30px;
+       margin-left: 62px;
    }
    .hotel-lesoleil{
        display: flex;
@@ -1443,8 +1443,9 @@ footer li{
        list-style-type: none;
        line-height:1.6;
    }
-   footer p{
+   footer h6{
        font-weight: bolder;
+       font-size: 13px;
    }
    footer li{
        font-size:13px;
