@@ -1040,10 +1040,6 @@ header{
        padding: 18px;
 }
 /*PARTIE filtre*/
-.section-filtre li:hover{
-       color:#2588cf;
-      cursor: pointer;
-}
 .section-filtre{
        display:flex;
        align-items: center;
@@ -1056,6 +1052,28 @@ header{
        list-style-type: none;
        grid-gap: 21px;
        margin-left: -30px;
+}
+.section-filtre i{
+    margin: -1px -7px -2px -5px;
+    padding: 1rem;
+    border-radius: 50%;
+    background:#DEEBFF;
+    color:#0065FC;
+    font-size:17px
+}
+.section-filtre li:hover{
+    color:#2588cf;
+   cursor: pointer;
+}
+.section-filtre li{
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
+    font-weight: bolder;
+    padding-right: 16px;
+    font-size:17px
+}
+.section-filtre h2{
+    font-size: 17px;
 }
 .economie{
        grid-area:1/1/2/2;
@@ -1081,24 +1099,6 @@ header{
 }
 .filtre-dog{
        padding-left: 16px;
-}
-.section-filtre i{
-       margin: -1px -7px -2px -5px;
-       padding: 1rem;
-       border-radius: 50%;
-       background:#DEEBFF;
-       color:#0065FC;
-       font-size:17px
-}
-.section-filtre li{
-       border: 2px solid #F2F2F2;
-       border-radius: 1.4rem;
-       font-weight: bolder;
-       padding-right: 16px;
-       font-size:17px
-}
-.section-filtre h2{
-       font-size: 17px;
 }
 .logement{
        display: flex;
@@ -1447,6 +1447,8 @@ footer{
  grid-template-columns: 1fr 1fr 1fr;
  background-color:#F2F2F2;
  border:1px solid red;
+ margin-top:30px;
+ margin: 30px -17px -19px -15px
 }
 footer ul{
  list-style-type: none;

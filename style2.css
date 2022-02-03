@@ -1,0 +1,342 @@
+@media screen and (max-width: 768px) {}
+
+@media screen and (min-width:768px)and (max-width:992px) {}
+
+@media screen and (min-width:992px) {
+       body {
+              font-family: 'Raleway', sans-serif;
+              box-sizing: border-box;
+              padding: 2%;
+       }
+
+       header {
+              border: 1px solid red;
+       }
+
+       .navbar img {
+              height: 30px;
+       }
+
+       .navbar {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-right: 20px;
+       }
+
+       .navbar ul {
+              display: flex;
+              list-style-type: none;
+              margin-left: 14px;
+       }
+
+       .navbar li {
+              padding-top: 25px;
+              font-size: 12px;
+              margin-top: -24px;
+              padding-left: 45px;
+       }
+
+       .navbar a {
+              text-decoration: none;
+              color: black;
+       }
+
+       .navbar a:hover {
+              border-top: 3px solid #0065FC;
+              padding-top: 22px;
+       }
+
+       .under-logo p {
+              font-size: 13px;
+              border: 1px solid red;
+       }
+
+       .under-logo h3 {
+              border: 1px solid red;
+       }
+
+       /*BOUTON DE RECHERCHE*/
+       .bar-search {
+              border: 1px solid red;
+       }
+
+       .bouton1 {
+              border-radius: 0 14px 14px 0;
+              color: white;
+              background-color: #0065FC;
+              border: 0 solid transparent;
+              margin-left: -6px;
+              padding: 18px;
+       }
+
+       .bouton2 {
+              display: none;
+       }
+
+       .search {
+              font-weight: bolder;
+              border: 2px solid #F2F2F2;
+              border-left: none;
+              font-size: 16px;
+              padding: 14px;
+              margin-left: -8px;
+       }
+
+       .loupe {
+              background: #F2F2F2;
+              border-radius: 10px 0 0 10px;
+              padding: 18px;
+       }
+
+       /*section filtre*/
+       .section-filtre {
+              display: flex;
+       }
+
+       .section-filtre-ul {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-wrap: wrap;
+              text-decoration: none;
+       }
+
+       .section-filtre-li {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-left: 11px;
+              border: 2px solid #F2F2F2;
+              border-radius: 20px;
+              font-weight: bolder;
+              font-size: 17px;
+       }
+
+       .section-filtre li:hover {
+              color: #2588cf;
+              cursor: pointer;
+       }
+
+       .section-filtre i {
+              margin: -1px -7px -2px -5px;
+              padding: 13px;
+              border-radius: 100px;
+              background: #DEEBFF;
+              color: #0065FC;
+              font-size: 17px;
+       }
+
+       .economie {
+              grid-area: 1/1/2/2;
+              padding-right: 16px;
+       }
+
+       .filtre-economique {
+              padding-left: 12px;
+              margin-left:5px;
+              margin-right:5px;
+       }
+
+       .familial {
+              grid-area: 1/2/2/3;
+       }
+
+       .filtre-familial {
+              padding-left: 10px;
+               margin-left: 5px;
+             margin-right: 14px;
+       }
+
+       .heart {
+              grid-area: 1/3/2/4;
+       }
+
+       .filtre-heart {
+              padding-left: 16px;
+              margin-left: 4px;
+              margin-right: 10px;
+       }
+
+       .dog {
+              grid-area: 1/4/1/5;
+       }
+
+       .filtre-dog {
+              padding-left: 16px;
+              padding-left: 16px;
+    margin-right: 12px;
+       }
+       .logement{
+              display: flex;
+              align-items: baseline;
+              margin-bottom: 20px;
+              border:1px solid red;
+       }
+       .logement h3{
+              padding-left:20px;
+       }
+       .logement i{
+              color:#0065FC;
+              margin-left: 15px;
+       }
+       /*section hebergement marseille*/
+       .hebergement-marseille {
+              display: flex;
+            flex-direction:column;
+              background-color: #f2F2F2;
+              padding-left:25px;
+              width:65%;
+              border-radius: 20px;
+       }
+
+       .hebergement-marseille-section {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+       }
+       .section1 {
+              display: flex;
+              justify-content: space-between;
+
+       }
+       .hebergement-marseille-hotel {
+              border-radius: 15px 15px 15px 15px;
+              background: white;
+              height: 175px;
+              width: 200px;
+              box-shadow: 1px 1px 11px 0px;
+              display: flex;
+              flex-direction: column;
+              margin-right: 25px;
+              margin-bottom:30px;
+       }
+       .hebergement-marseille-photo {
+              height: 110px;
+              object-fit: cover;
+              border-radius: 15px 15px 0 0;
+              width: 97%;
+              margin:4px 0px 0px 3px;
+       }
+       .hebergement-marseille-icone4{
+              font-size:small;
+              display: flex;
+              color:#0065FC;
+              margin-left:-40px;
+             
+       }
+       .hebergement-marseille-icone4 li{
+              list-style-type: none;
+}
+.hebergement-marseille-texte{
+       line-height: 0.0;
+       font-size: 13px;
+       margin-left: 10px;
+       margin-top: -7px;
+}
+/*SECTION LES PLUS POPULAIRE*/
+.les-plus-populaires{
+       width: 30%;
+       background-color:#f2F2F2;
+       border-radius: 20px;
+}
+.section-cote{
+       display:flex;
+       align-items: center;
+       justify-content: space-around;
+
+}
+#hotel-soleil{
+       background-image: url("images/hebergements/4_small/hotel-soleil.jpg");
+}
+#hotel-aucoeur-deleau{
+       background-image: url("images/hebergements/4_small/aucoeur.jpg");
+
+}
+#hotel-toutbleu-blanc{
+       background-image: url("images/hebergements/4_small/hotel-toutbleuet-blanc.jpg");
+
+}
+.les-plus-populaires-hotel{
+       margin-bottom: 30px;
+    margin-left: 22px;
+    border-radius: 15px 15px;
+    background: white;
+    height: 112px;
+    width: 83%;
+    box-shadow: 1px 1px 11px 0px;
+    padding-top: 6px;
+    padding-left: 6px;
+    margin-top: 5px;
+    display:flex;
+}
+.les-plus-populaires-photo{
+       background-size: cover;
+       background-position: center;
+       height: 107px;
+       width: 39%;
+       border-radius: 20px 0 0 20px;
+}
+.le-soleil{
+       line-height: 0.9;
+       font-size: 13px;
+       margin-left: 14px;
+       margin-top: -10px;
+}
+.les-plus-populaires-icone1{
+display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin-left: -40px;
+    color: steelblue;
+    margin-top: 30px;
+}
+.marseille-photo{
+       display: flex;
+       justify-content: space-between;
+}
+.marseille-photo h5{
+       margin-left: 15px;
+       font-size: 15px;
+       margin-top: 14px;
+}
+.marseille-photo-impair{
+       width: 250px;
+       height:431px;
+       background-color: white;
+       border-radius: 20px 20px;
+ box-shadow: 1px 1px 11px 0px;
+}
+.marseille-photo-pair{
+       width: 250px;
+       height:170px;
+       background-color: white;
+       border-radius: 20px 20px;
+ box-shadow: 1px 1px 11px 0px;
+}
+#photo3{
+       margin-top:116px
+}
+#notre-dame{
+       height:100px;
+}
+.photo-vieuxport{
+       width: 100%;
+       height: 376px;
+       object-fit: cover;
+       border-radius: 20px 20px 0 0;
+         }
+         .photo-pomegue{
+              width:250px;
+              height:110px;
+              border-radius:15px 15px 0 0;
+              object-fit: cover;
+             }
+.photo-frioul{
+       width: 250px;
+    height: 112px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+
+}
+}
