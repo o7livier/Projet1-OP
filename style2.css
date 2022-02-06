@@ -1,52 +1,40 @@
-@media screen and (max-width: 768px) {}
-
-@media screen and (min-width:768px)and (max-width:992px) {}
-
-@media screen and (min-width:992px) {
-       body {
+@media screen and (max-width: 768px) {
+        body {
               font-family: 'Raleway', sans-serif;
-              box-sizing: border-box;
-              padding: 2%;
+              box-sizing: border-box;    
        }
 
        header {
               border: 1px solid red;
        }
-
-       .navbar img {
-              height: 30px;
+       .bouton1{
+              display:none
        }
-
-       .navbar {
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-              margin-right: 20px;
+       .bouton2{  
+              border-radius:30% 30% 30% 30%;
+              color:white;
+              background-color: #0065FC;
+              border:0 solid transparent;
+              margin-left:-20px;  
+              padding: 1rem;
+              
+          }
+          .bouton2:hover{
+              transform:scale(1.4);
+          }
+       .search{
+              font-weight: bolder;
+              border: 2px solid #F2F2F2;
+              border-left: none;
+              font-size: 16px;
+              padding: 14px;
+              margin-left: -8px;
        }
-
-       .navbar ul {
-              display: flex;
-              list-style-type: none;
-              margin-left: 14px;
+       .loupe{
+              background: #F2F2F2;
+              border-radius: 10px 0 0 10px;
+              padding: 18px;
        }
-
-       .navbar li {
-              padding-top: 25px;
-              font-size: 12px;
-              margin-top: -24px;
-              padding-left: 45px;
-       }
-
-       .navbar a {
-              text-decoration: none;
-              color: black;
-       }
-
-       .navbar a:hover {
-              border-top: 3px solid #0065FC;
-              padding-top: 22px;
-       }
-
        .under-logo p {
               font-size: 13px;
               border: 1px solid red;
@@ -59,6 +47,226 @@
        /*BOUTON DE RECHERCHE*/
        .bar-search {
               border: 1px solid red;
+       }
+       /* SECTION FILTRE*/
+       .section-filtre{
+              border:1px solid red;
+       }
+       .logement{
+              border:1px solid red;
+       }
+       /*HEBERGEMENT A MARSEILLE*/
+       .hebergement-marseille {
+              border:1px solid red;
+
+}
+.hebergement-marseille-hotel {
+       border-radius: 15px 15px 15px 15px;
+       background: white;
+       height: 180px;
+       width: 374px;
+       box-shadow: 1px 1px 11px 0px;
+       display: flex;
+       flex-direction: column;
+       margin-bottom: 30px;
+       margin-left: 10px;
+}
+.hebergement-marseille-photo{
+       object-fit: cover;
+       height: 120px;
+    border-radius: 13px 13px 0 0;
+}
+.hebergement-marseille-texte {
+       line-height: 0.0;
+       font-size: 13px;
+       margin-left: 10px;
+       margin-top: -7px;
+}
+.hebergement-marseille-icone {
+       font-size: small;
+       display: flex;
+       color: #0065FC;
+       margin-left: -40px;
+
+}
+
+.hebergement-marseille-icone li {
+       list-style-type: none;
+}
+/*SECTION LES PLUS POPULAIRES*/
+.les-plus-populaires{
+       background-color: #f2F2F2;
+       padding-bottom: 10px;
+}
+.section-cote{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       margin-left:20px;
+}
+.section-cote h3{
+
+       font-size:21px;
+}
+.section-cote i{
+       padding-right:20px;
+       font-size:23px
+}
+.icone-etoile-gris{
+       color:gray;
+       opacity: 0.5;
+
+}
+.les-plus-populaires-hotel {
+       margin-bottom: 30px;
+       margin-left: 14px;
+       border-radius: 15px 15px;
+       background: white;
+       height: 147px;
+       width: 91%;
+       box-shadow: 1px 1px 11px 0px;
+       padding-top: 6px;
+       padding-left: 6px;
+       margin-top: 5px;
+       display: flex;
+}
+.les-plus-populaires-photo {
+       background-size: cover;
+       background-position: center;
+       height: 141px;
+       width: 39%;
+       border-radius: 20px 0 0 20px;
+}
+.le-soleil {
+       line-height: 0.9;
+       font-size: 16px;
+       margin-left: 14px;
+       margin-top: -10px;
+}
+
+.les-plus-populaires-list {
+       display: flex;
+       justify-content: flex-start;
+      list-style-type: none;
+       margin-left: -40px;
+       color:#0065FC;
+       margin-top: 30px;
+}
+
+#hotel-soleil {
+       background-image: url("images/hebergements/4_small/hotel-soleil.jpg");
+}
+
+#hotel-aucoeur-deleau {
+       background-image: url("images/hebergements/4_small/aucoeur.jpg");
+
+}
+
+#hotel-toutbleu-blanc {
+       background-image: url("images/hebergements/4_small/hotel-toutbleuet-blanc.jpg");
+
+}
+/*SECTION ACTIVITÉE A MARSEILLE*/
+.marseille-photo h5{
+       margin-top:10px;
+       margin-left:10px;
+}
+.marseille-photo-impair,.marseille-photo-fort-pomegues,.frioul,.notre-dame,.longchamp {
+       height: 165px;
+       width: 396px;
+       background-color: white;
+       border-radius: 20px;
+       box-shadow: 1px 2px 11px;
+       
+}
+.activite-marseille h4{
+       font-size:20px;
+}
+#photo1,#photo3,#photo4,#photo5,#photo6{
+       margin-top:21px;
+       
+}
+.photo-vieuxport , .photo-pomegues,.photo-notre-dame,.photo-longchamp,.photo-frioul{
+       height: 124px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+footer {
+
+       background-color:#9f4747;
+       margin-top:40px;
+}
+
+.footer ul {
+
+       list-style-type: none;
+       line-height: 1.6;
+}
+.titre-propos{
+       padding-top:10px;
+       font-weight:bolder;
+       font-size: 14px;
+       margin-bottom: 18px;
+      }
+      footer li{
+       font-size:13px;
+      }
+}
+
+@media screen and (min-width:768px)and (max-width:992px) {
+
+}
+
+@media screen and (min-width:992px) {
+       body {
+              font-family: 'Raleway', sans-serif;
+              box-sizing: border-box;
+             margin:0
+       }
+       header{
+              margin:2%;
+       }
+       .navbar img {
+              height: 30px;
+       }
+
+       .navbar {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+       }
+
+       .navbar ul {
+              display: flex;
+              list-style-type: none;
+       }
+
+       .navbar li {
+              font-size: 14px;
+              padding-left: 45px;
+              
+       }
+
+       .navbar a {
+              text-decoration: none;
+              color: black;
+       }
+
+       .navbar a:hover {
+              border-top: 3px solid #0065FC;
+              padding-top:43px;
+       }
+.section0{
+       margin:2%;
+}
+       .under-logo p {
+              font-size: 13px;
+       }
+
+       /*BOUTON DE RECHERCHE*/
+       .bar-search {
+              margin:2%;
        }
 
        .bouton1 {
@@ -92,6 +300,7 @@
        /*section filtre*/
        .section-filtre {
               display: flex;
+              margin:2%;
        }
 
        .section-filtre-ul {
@@ -134,8 +343,8 @@
 
        .filtre-economique {
               padding-left: 12px;
-              margin-left:5px;
-              margin-right:5px;
+              margin-left: 5px;
+              margin-right: 5px;
        }
 
        .familial {
@@ -144,8 +353,8 @@
 
        .filtre-familial {
               padding-left: 10px;
-               margin-left: 5px;
-             margin-right: 14px;
+              margin-left: 5px;
+              margin-right: 14px;
        }
 
        .heart {
@@ -165,28 +374,35 @@
        .filtre-dog {
               padding-left: 16px;
               padding-left: 16px;
-    margin-right: 12px;
+              margin-right: 12px;
        }
-       .logement{
+
+       .logement {
               display: flex;
               align-items: baseline;
               margin-bottom: 20px;
-              border:1px solid red;
+              margin:2%
        }
-       .logement h3{
-              padding-left:20px;
+
+       .logement h3 {
+              padding-left: 20px;
        }
-       .logement i{
-              color:#0065FC;
+
+       .logement i {
+              color: #0065FC;
               margin-left: 15px;
        }
+
        /*section hebergement marseille*/
+       main{
+              margin:2%;
+       }
        .hebergement-marseille {
               display: flex;
-            flex-direction:column;
+              flex-direction: column;
               background-color: #f2F2F2;
-              padding-left:25px;
-              width:65%;
+              padding-left: 25px;
+              width: 65%;
               border-radius: 20px;
        }
 
@@ -195,11 +411,18 @@
               flex-wrap: wrap;
               justify-content: space-between;
        }
+
        .section1 {
               display: flex;
               justify-content: space-between;
 
        }
+       .icone-etoile-gris{
+              color:gray;
+              opacity: 0.5;
+
+       }
+
        .hebergement-marseille-hotel {
               border-radius: 15px 15px 15px 15px;
               background: white;
@@ -209,134 +432,216 @@
               display: flex;
               flex-direction: column;
               margin-right: 25px;
-              margin-bottom:30px;
+              margin-bottom: 30px;
        }
+
        .hebergement-marseille-photo {
               height: 110px;
               object-fit: cover;
               border-radius: 15px 15px 0 0;
               width: 97%;
-              margin:4px 0px 0px 3px;
+              margin: 4px 0px 0px 3px;
        }
-       .hebergement-marseille-icone4{
-              font-size:small;
+
+       .hebergement-marseille-icone {
+              font-size: small;
               display: flex;
-              color:#0065FC;
-              margin-left:-40px;
-             
+              color: #0065FC;
+              margin-left: -40px;
+
        }
-       .hebergement-marseille-icone4 li{
+
+       .hebergement-marseille-icone li {
               list-style-type: none;
-}
-.hebergement-marseille-texte{
-       line-height: 0.0;
-       font-size: 13px;
-       margin-left: 10px;
-       margin-top: -7px;
-}
-/*SECTION LES PLUS POPULAIRE*/
-.les-plus-populaires{
-       width: 30%;
-       background-color:#f2F2F2;
-       border-radius: 20px;
-}
-.section-cote{
-       display:flex;
-       align-items: center;
-       justify-content: space-around;
+       }
 
-}
-#hotel-soleil{
-       background-image: url("images/hebergements/4_small/hotel-soleil.jpg");
-}
-#hotel-aucoeur-deleau{
-       background-image: url("images/hebergements/4_small/aucoeur.jpg");
+       .hebergement-marseille-texte {
+              line-height: 0.0;
+              font-size: 13px;
+              margin-left: 10px;
+              margin-top: -7px;
+       }
 
-}
-#hotel-toutbleu-blanc{
-       background-image: url("images/hebergements/4_small/hotel-toutbleuet-blanc.jpg");
+       /*SECTION LES PLUS POPULAIRE*/
+       .les-plus-populaires {
+              width: 30%;
+              background-color: #f2F2F2;
+              border-radius: 20px;
+       }
 
-}
-.les-plus-populaires-hotel{
-       margin-bottom: 30px;
-    margin-left: 22px;
-    border-radius: 15px 15px;
-    background: white;
-    height: 112px;
-    width: 83%;
-    box-shadow: 1px 1px 11px 0px;
-    padding-top: 6px;
-    padding-left: 6px;
-    margin-top: 5px;
-    display:flex;
-}
-.les-plus-populaires-photo{
-       background-size: cover;
-       background-position: center;
-       height: 107px;
-       width: 39%;
-       border-radius: 20px 0 0 20px;
-}
-.le-soleil{
-       line-height: 0.9;
-       font-size: 13px;
-       margin-left: 14px;
-       margin-top: -10px;
-}
-.les-plus-populaires-icone1{
-display: flex;
-    justify-content: flex-start;
-    list-style-type: none;
-    margin-left: -40px;
-    color: steelblue;
-    margin-top: 30px;
-}
-.marseille-photo{
-       display: flex;
-       justify-content: space-between;
-}
-.marseille-photo h5{
-       margin-left: 15px;
-       font-size: 15px;
-       margin-top: 14px;
-}
-.marseille-photo-impair{
-       width: 250px;
-       height:431px;
-       background-color: white;
-       border-radius: 20px 20px;
- box-shadow: 1px 1px 11px 0px;
-}
-.marseille-photo-pair{
-       width: 250px;
-       height:170px;
-       background-color: white;
-       border-radius: 20px 20px;
- box-shadow: 1px 1px 11px 0px;
-}
-#photo3{
-       margin-top:116px
-}
-#notre-dame{
-       height:100px;
-}
-.photo-vieuxport{
-       width: 100%;
-       height: 376px;
-       object-fit: cover;
-       border-radius: 20px 20px 0 0;
-         }
-         .photo-pomegue{
-              width:250px;
-              height:110px;
-              border-radius:15px 15px 0 0;
+       .section-cote {
+              display: flex;
+              align-items: center;
+              justify-content: space-around;
+
+       }
+
+       #hotel-soleil {
+              background-image: url("images/hebergements/4_small/hotel-soleil.jpg");
+       }
+
+       #hotel-aucoeur-deleau {
+              background-image: url("images/hebergements/4_small/aucoeur.jpg");
+
+       }
+
+       #hotel-toutbleu-blanc {
+              background-image: url("images/hebergements/4_small/hotel-toutbleuet-blanc.jpg");
+
+       }
+
+       .les-plus-populaires-hotel {
+              margin-bottom: 30px;
+              margin-left: 22px;
+              border-radius: 15px 15px;
+              background: white;
+              height: 112px;
+              width: 83%;
+              box-shadow: 1px 1px 11px 0px;
+              padding-top: 6px;
+              padding-left: 6px;
+              margin-top: 5px;
+              display: flex;
+       }
+
+       .les-plus-populaires-photo {
+              background-size: cover;
+              background-position: center;
+              height: 107px;
+              width: 39%;
+              border-radius: 20px 0 0 20px;
+       }
+
+       .le-soleil {
+              line-height: 0.9;
+              font-size: 13px;
+              margin-left: 14px;
+              margin-top: -10px;
+       }
+
+       .les-plus-populaires-list {
+              display: flex;
+              justify-content: flex-start;
+              list-style-type: none;
+              margin-left: -40px;
+              color: #0065FC;
+              margin-top: 30px;
+       }
+       .activite-marseille{
+              margin:2%;
+       }
+
+       .marseille-photo {
+              display: flex;
+              justify-content: space-between;
+       }
+
+       .marseille-photo h5 {
+              margin-left: 15px;
+              font-size: 15px;
+              margin-top: 11px;
+       }
+
+       .marseille-photo-impair {
+              width: 250px;
+              height: 431px;
+              background-color: white;
+              border-radius: 20px 20px;
+              box-shadow: 1px 1px 11px 0px;
+       }
+
+       #photo3 {
+              margin-top: 55px;
+       }
+
+       .photo-vieuxport {
+              width: 101%;
+              height: 376px;
               object-fit: cover;
-             }
-.photo-frioul{
-       width: 250px;
-    height: 112px;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
+              border-radius: 20px 20px 0 0;
+       }
 
-}
+       .marseille-photo-fort-pomegues {
+              height: 235px;
+              width: 250px;
+              background-color: white;
+              border-radius: 20px;
+              box-shadow: 1px 2px 11px
+       }
+
+       .photo-pomegues {
+              height: 196px;
+              width: 100%;
+              object-fit: cover;
+              border-radius: 20px 20px 0 0;
+       }
+
+       .frioul {
+              height: 139px;
+              background: white;
+              border-radius: 20px;
+              box-shadow: 1Px 2px 11px;
+
+       }
+
+       .photo-frioul {
+              object-fit: cover;
+              height: 90px;
+              width: 101%;
+              border-radius: 20px 20px 0 0;
+       }
+
+       .notre-dame {
+              height: 196px;
+              background: white;
+              border-radius: 20px 20px;
+              width: 250px;
+              box-shadow: 1Px 2px 11px;
+       }
+
+       .photo-notre-dame {
+              height: 149px;
+              width: 100%;
+              object-fit: cover;
+              border-radius: 20px 20px 0 0;
+       }
+
+       .longchamp {
+              height: 178px;
+              width: 250px;
+              background: white;
+              border-radius: 20px 20px;
+              margin-top: 56px;
+              box-shadow: 1px 2px 11px;
+       }
+
+       .photo-longchamp {
+              border-radius: 20px 20px 0 0;
+              height: 127px;
+              width: 101%;
+       }
+
+       footer {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              background-color:#f2f2f2;
+              margin-top:40px;
+              padding:0;
+       }
+
+       .footer ul {
+
+              list-style-type: none;
+              line-height: 1.6;
+       }
+       .titre-propos{
+              padding-top:10px;
+              font-weight:bolder;
+              font-size: 14px;
+              margin-bottom: 18px;
+             }
+             footer li{
+              font-size:13px;
+             }
 }
